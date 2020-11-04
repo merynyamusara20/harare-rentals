@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham-Light'),
+        url('Gotham-Light.woff2') format('woff2'),
+        url('Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

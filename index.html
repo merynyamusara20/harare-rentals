@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- CSS only -->
+
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+  <link rel="stylesheet" href="fontawesome-5.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <!-- header start -->
+  <nav class="navbar navbar-expand-lg" id="nav">
+   <div class="container">
+    <a class="navbar-brand main-img" href="index.html"><img src="images/harare rentals logo.png" alt=""></a>
+
+
+    <div class="left d-flex align-items-center">
+      <li class="nav-item d-flex d-lg-none">
+        <a class="nav-link  position-relative dollar p-0"><img src="featured/currency-switcher.png" alt=""
+            style="height:40px;"></a>
+      </li>
+      <button class="navbar-toggler ml-auto border-none p-2" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="listings-page.html">Rentals <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="single.html">Property to rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#"><span class="fa fa-plus"></span> list Property</a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link  position-relative dollar"><img src="featured/currency-switcher.png" alt=""></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            href="#"><span><img class="d-none d-lg-block" src="featured/login-icon.png" alt=""></span> login</a>
+        </li>
+      </ul>
+      <div class="currency-container position-absolute ">
+        <div class="currency-menu">
+          <ul class="list-unstyled currency-ul">
+            <li style="font-weight: bold">
+              <a class="bg-default" href="javascript:void(0)">USD - Foreign Transactions</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">ZWL - Local Transactions</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </nav>
+  <div class="progress-container fixed-top">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <!-- header ends -->
+
+  <!-- LOGIN MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="post" class="form-group">
+            <input class="form-control" type="phone number" placeholder="Phone Number" required>
+            <input class="form-control" type="pasword" placeholder="Password" required>
+            <button class="form-control" role="button">sign in</button>
+          </form>
+          <p>forgot password click <a href="javascript:void(0)">here</a>to reset </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- LOGIN MODAL ENDS -->
+
+
+
+
+
+  <section class="heroe">
+    <div class="overlay">
+    </div>
+
+    <div class="search">
+      <h1>Find Places to rent in Harare</h1>
+      <form action="post">
+        <input type="text" placeholder="Search For a Rental in Harare" role="combobox"
+          autocomplete="none"><button class="d-none d-sm-block">search</button>
+      </form>
+      <span class="dropdown-wrapper" aria-hidden="true"></span>
+      <!-- Example split danger button -->
+      <ul class="nav">
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true">
+              Property Type
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="1"> Apartment/Flat</a>
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="2"> Commercial</a>
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="3"> Cottage</a>
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="4"> Developments</a>
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="5"> Farm/Smallholding</a>
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="5"> Hospitality </a>
+              <a class="dropdown-item" href="#"> <input type="checkbox" value="5"> House </a>
+
+
+
+
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true">
+              Min Price
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">$15,000</a>
+              <a class="dropdown-item" href="#">$25,000</a>
+              <a class="dropdown-item" href="#">$50,000</a>
+              <a class="dropdown-item" href="#">$75,000</a>
+              <a class="dropdown-item" href="#">$100,000</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true">
+              Max Price
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">$15,000</a>
+              <a class="dropdown-item" href="#">$25,000</a>
+              <a class="dropdown-item" href="#">$50,000</a>
+              <a class="dropdown-item" href="#">$75,000</a>
+              <a class="dropdown-item" href="#">$100,000</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true">
+              Beds
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">1+</a>
+              <a class="dropdown-item" href="#">2+</a>
+              <a class="dropdown-item" href="#">3+</a>
+              <a class="dropdown-item" href="#">4+</a>
+              <a class="dropdown-item" href="#">5+</a>
+              <a class="dropdown-item" href="#">6+</a>
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true">
+              Baths
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">1+</a>
+              <a class="dropdown-item" href="#">2+</a>
+              <a class="dropdown-item" href="#">3+</a>
+              <a class="dropdown-item" href="#">4+</a>
+              <a class="dropdown-item" href="#">5+</a>
+              <a class="dropdown-item" href="#">6+</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="true">
+             Area
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">1+</a>
+              <a class="dropdown-item" href="#">2+</a>
+              <a class="dropdown-item" href="#">3+</a>
+              <a class="dropdown-item" href="#">4+</a>
+              <a class="dropdown-item" href="#">5+</a>
+              <a class="dropdown-item" href="#">6+</a>
+            </div>
+          </div>    
+        </li>
+        <li class="search-button d-block d-md-none">
+          <button >search</button>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- heroe ends -->
+
+  <section class="surbubs" aos="fade-in" aos-duration="500">
+
+    <h1>Featured Properties</h1>
+    <p>View Properties in different Surbubs</p>
+
+
+
+
+    <div class="container">
+      <ul class="nav nav-pills col-md-6 col-lg-6 col-sm-12">
+        <li><a data-toggle="pill" href="#South" class="active">North</a></li>
+        <li><a data-toggle="pill" href="#East">South</a></li>
+        <li><a data-toggle="pill" href="#North">East</a></li>
+        <li><a data-toggle="pill" href="#West">West</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="South" class="tab-pane fade in active show">
+          <div class="row">
+            <div class="col-12 main-details">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="region-1 shadow">
+                    <div class="agent">Palm Golding Trust</div>
+
+                    <a href="single.html">View Property</a>
+                    <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid" class="expandedImg"
+                      id="expandedImg">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 m-auto position-relative">
+                  <div class="region shadow">
+
+                    <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                    <div class="overlay">
+                      <h5>Harare South, Harare</h5>
+                      <p>Your life shouldn’t be built around your home, instead, your home should be built around your
+                        life and we get it! Our team have expert knowledge in all things home design and available land
+                        within the region.
+
+                      </p>
+                      <button>View Properties</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-1">Palm Golding Trust</div>
+                <a href="single.html">View Property</a>
+
+                <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Property</a>
+                <img src="featured/woman-works-on-computer-at-home.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-3">
+
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-3">
+
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <!-- Tab content -->
+
+        <div id="North" class="tab-pane fade in">
+          <div class="row">
+            <div class="col-12 main-details">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="region-1 shadow">
+                    <div class="agent">Palm Golding Trust</div>
+
+                    <a href="single.html">View Properties</a>
+                    <img src="images/abalina_beach_cottage_front-left-photo_01-500x333.jpg" alt="" class="top img-fluid"
+                      class="expandedImg" id="expandedImg">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 m-auto position-relative">
+                  <div class="region shadow">
+
+                    <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                    <div class="overlay">
+                      <h5>Harare North, Harare</h5>
+                      <p>Your life shouldn’t be built around your home, instead, your home should be built around your
+                        life and we get it! Our team have expert knowledge in all things home design and available land
+                        within the region.
+
+                      </p>
+                      <button>View Properties</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+
+                <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/woman-works-on-computer-at-home.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div id="East" class="tab-pane fade in">
+          <div class="row">
+            <div class="col-12 main-details">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="region-1 shadow">
+                    <div class="agent">Palm Golding Trust</div>
+
+                    <a href="single.html">View Properties</a>
+                    <img src="images/img/suburban-house.jpg" alt="" class="top img-fluid" class="expandedImg"
+                      id="expandedImg">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 m-auto position-relative">
+                  <div class="region shadow">
+
+                    <img src="images/img/giants-in-the-tiny-village.jpg" alt="">
+                    <div class="overlay">
+                      <h5>Harare East, Harare</h5>
+                      <p>Your life shouldn’t be built around your home, instead, your home should be built around your
+                        life and we get it! Our team have expert knowledge in all things home design and available land
+                        within the region.
+
+                      </p>
+                      <button>View Properties</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+
+                <div class="agent">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+
+                <img src="featured/bungalow-house-exterior.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/Nelson-showhome-page-website-banner.png" alt="">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <a href="single.html">View Properties</a>
+                <img src="featured/white-villa-with-red-tile-roof.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="West" class="tab-pane fade in">
+          <div class="row">
+            <div class="col-12 main-details">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div class="region-1 shadow">
+
+                    <div class="agent">Palm Golding Trust</div>
+
+                    <a href="single.html">View Properties</a>
+                    <img src="images/img/one-storey-home-exterior.jpg" alt="" class="top img-fluid" class="expandedImg"
+                      id="expandedImg">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 m-auto position-relative">
+                  <div class="region shadow">
+
+                    <img src="images/15-Outstanding-Scandinavian-Landscape-Designs-You-Need-To-See-1.jpg" alt="">
+                    <div class="overlay">
+                      <h5>Harare West, Harare</h5>
+                      <p>Your life shouldn’t be built around your home, instead, your home should be built around your
+                        life and we get it! Our team have expert knowledge in all things home design and available land
+                        within the region.
+
+                      </p>
+                      <button>View Properties</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+
+                <img src="featured/20200317-152057-banner-2.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/woman-works-on-computer-at-home.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/white-villa-with-red-tile-roof.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="sub-details shadow">
+                <div class="agent agent-2">Palm Golding Trust</div>
+                <a href="single.html">View Properties</a>
+                <img src="featured/Showhome-banner-5-flaxfield-fixed.jpg" alt="" onclick="myFunction(this)">
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="community">
+    <div class="container">
+      <h2>Join Our Community</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum rerum nihil ut.</p>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="card">
+            <div class="join-group">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#">Follow us on Facebook <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="card">
+            <div class="join-group">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#">Follow us on Twitter <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="card">
+            <div class="join-group">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#">Follow us on Instagram <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="card bottom">
+            <div class="join-group">
+              <a href="#"><i class="fa fa-users "></i></a>
+              <h2>Join Our Official Harare Rentals Facebook Group</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="popular-areas">
+    <div class="container">
+      <h1>Places to rent</h1>
+      <p>Lorem ipsum dolor sit.</p>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mt-lg-auto col-sm-6 col-xs-12">
+          <div class="showcase">
+            <h5>Harare North</h5>
+            <div class="item pop1">
+              <div class="overlay"></div>
+              <div class="overlay-text">
+
+                <a href="#">Marlbrough</a>
+                <a href="#">Marbelreign</a>
+                <a href="#">Borrowdale</a>
+                <a href="#">Westagate</a>
+                <a href="#" class="btn">View More</a>
+              </div>
+              <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-lg-auto  col-sm-6 col-xs-12">
+          <div class="showcase">
+            <h5>Harare South</h5>
+            <div class="item pop2">
+              <div class="overlay"></div>
+              <div class="overlay-text">
+
+                <a href="#">Marlbrough</a>
+                <a href="#">Marbelreign</a>
+                <a href="#">Borrowdale</a>
+                <a href="#">Westagate</a>
+                <a href="#" class="btn">View More</a>
+              </div>
+              <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mt-lg-auto col-sm-6 col-xs-12">
+          <div class="showcase">
+            <h5>Harare East</h5>
+            <div class="item pop3">
+              <div class="overlay"></div>
+              <div class="overlay-text">
+
+                <a href="#">Marlbrough</a>
+                <a href="#">Marbelreign</a>
+                <a href="#">Borrowdale</a>
+                <a href="#">Westagate</a>
+                <a href="#" class="btn">View More</a>
+              </div>
+              <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mt-lg-auto col-sm-6 col-xs-12">
+          <div class="showcase">
+
+            <h5>Harare West</h5>
+            <div class="item pop4">
+              <div class="overlay"></div>
+              <div class="overlay-text">
+
+                <a href="#">Marlbrough</a>
+                <a href="#">Marbelreign</a>
+                <a href="#">Borrowdale</a>
+                <a href="#">Westagate</a>
+                <a href="#" class="btn">View More</a>
+              </div>
+              <img src="images/Images/Home-Wallpaper-7.jpg" class="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="submit">
+    <p>Receive our property highlights</p>
+    <img src="images/subscribe-arrow.svg" alt="">
+    <form action="https://www.example.com">
+      <!-- <a href="https://www.example.com" data-vars-ga-category="Call to action clicks" data-vars-ga-action="CTA link click" data-vars-ga-label="Homepage CTA clicks">My custom link</a> -->
+      <input type="email" placeholder="Email Address" required>
+      <button type="submit" href="https://www.example.com" data-vars-ga-category="Call to action clicks"
+        data-vars-ga-action="CTA link click" data-vars-ga-label="Homepage CTA clicks">subscribe</button>
+    </form>
+  </section>
+
+  <section class="services m-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <h5>Property</h5>
+          <ul>
+            <li><a href="">Property for sale</a></li>
+            <li><a href="">Property for rent</a></li>
+            <li><a href="">Developments</a></li>
+            <li><a href="">Commercial Rentals</a></li>
+            <li><a href="">Find an Estate Agent</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <h5>Advertise</h5>
+          <ul>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Property book the margazine</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="">Property Advice</a></li>
+            <li><a href="">Mortgage Calculator</a></li>
+            <li><a href="">E.A.C</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <h5>Facebook Groups</h5>
+          <ul>
+            <li><a href="">harare rentals</a></li>
+            <li><a href=""> harare Property sales</a></li>
+            <li><a href="">harare rooms for rent</a></li>
+            <li><a href="">All Groups(+30)</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-inner nav">
+        <ul class="nav">
+          <li>
+            <a href=""> about us</a>
+          </li>
+          <li>
+            <a href=""> contact us</a>
+          </li>
+          <li>
+            <a href=""> terms & conditions</a>
+          </li>
+          <li>
+            <a href=""> private policy</a>
+          </li>
+          <li>
+            <a href="">disclaimer</a>
+          </li>
+        </ul>
+
+        <img src="images/harare rentals logo.png" alt="">
+      </div>
+      <hr class="hr">
+      <div class="last">
+        <p>This site is protected by copyright and trademark laws under Zimbawe and International <Law class="a">harare
+            rentals.co &copy 2020</Law>
+        </p>
+
+        <div class="icons">
+          <a href="" class=""><i class="fab fa-facebook-f"></i></a>
+          <a href="" class=""> <i class="fab fa-instagram"></i></a>
+          <a href="" class=""> <i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <a href="#nav" class="fixed-icon"> <i class="fa fa-angle-up"></i> </a>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
