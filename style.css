@@ -193,21 +193,13 @@ nav.navbar #navbar ul li:nth-of-type(3) a:hover {
 }
 
 nav.navbar #navbar ul li:last-of-type span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 20px;
   margin-right: 10px;
 }
 
 nav.navbar #navbar ul li:last-of-type span img {
-  height: 36px;
+  width: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 nav.navbar #navbar ul li a {
@@ -256,7 +248,7 @@ nav.navbar #navbar ul li a .login {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 5px;
-  z-index: 9999;
+  z-index: 9999000009999;
   display: none;
   padding: 20px;
   display: none;
@@ -467,12 +459,6 @@ nav.navbar #navbar ul li a .login {
 .heroe .search ul li .dropdown-item {
   color: #000000;
   padding: 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .popular-areas {
@@ -2804,7 +2790,7 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .rentals-results > div .select-hide {
-  width: 158px;
+  width: 182px;
   text-align: right;
   padding-right: 14px;
 }
@@ -3795,6 +3781,12 @@ body > section.heroe > div.search > ul > li > div > div {
   min-width: 100%;
 }
 
+.hero .search ul li .dropdown-menu > .dropdown-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .hero .search ul li .dropdown-item {
   color: #000000;
   padding: 5px 10px;
@@ -3947,6 +3939,9 @@ nav.single-page {
     margin-right: 0px;
     display: inline-block;
   }
+  footer.main-footer .footer-inner ul li a {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -4054,14 +4049,21 @@ nav.single-page {
     margin: 15px 0;
   }
   .currency-container {
-    left: 10px;
+    left: 0;
     width: 100%;
+    right: 0;
+  }
+  .currency-container ul li a {
+    color: black;
+  }
+  .select-items {
+    left: -45px;
   }
   .select-items div, .select-selected {
     color: #808080;
     padding: 8px 8px;
     font-size: 12px;
-    font-size: 16px;
+    font-size: 12px;
   }
   .fa-angle-down {
     color: #808080;
@@ -4164,14 +4166,17 @@ nav.single-page {
     height: 40px;
   }
   .rentals > div > div > div:last-child .rentals-results > div p {
-    font-size: 16px;
+    font-size: 12px;
     color: #808080;
   }
   .rentals > div > div > div:last-child .rentals-results > div .custom-select {
     height: 40px;
   }
+  .rentals > div > div > div:last-child .rentals-results > div .select-selected {
+    font-size: 12px;
+  }
   .rentals > div > div > div:last-child .rentals-results .select-items > div {
-    font-size: 14px;
+    font-size: 12px;
     text-align: right;
   }
   .listings-hero {
@@ -4259,12 +4264,6 @@ nav.single-page {
     color: #000000;
     padding: 0px 20px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -4703,7 +4702,7 @@ nav.single-page {
   footer.main-footer .footer-inner ul li a {
     color: #212529;
     text-transform: capitalize;
-    font-size: 10px;
+    font-size: 13px;
     text-decoration: none;
   }
   footer.main-footer .footer-inner ul li:last-of-type::after {
@@ -5000,7 +4999,7 @@ nav.single-page {
     margin-bottom: 8px;
   }
   .carousel-image {
-    height: 300px;
+    height: 275px;
   }
   .card.agent #agent .modal-body p {
     display: block;
@@ -5027,6 +5026,9 @@ nav.single-page {
   #carousel-thumb > ol {
     position: relative;
     top: -3px;
+  }
+  #carousel-thumb a.carousel-control-prev, #carousel-thumb a.carousel-control-next {
+    top: -76px;
   }
   body > section.pt-5.pb-5.single-listings-card > div > div.row.align-items-center > div:nth-child(1) > h3 {
     font-size: 24px;
@@ -5193,12 +5195,6 @@ nav.single-page {
     color: #000000;
     padding: 0px 20px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

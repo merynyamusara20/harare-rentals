@@ -19,9 +19,7 @@ $(".btnn").click(function() {
   $(".drop-menu").toggle();  
 });
 
-// $(".showcase .item").hover(function(){
-//   $('.showcase .overlay').css("transform", "scale(1.1)");
-// });
+
 
 $('.carousel').carousel({
     interval: false,
@@ -166,32 +164,18 @@ $(document).ready(function(){
   
 });
 
-// $(".owl-two").slick({
-//   dots:true,
-//   slidesToShow:1,
-//   slidesToScroll:1,
-//   autoplay:false,
-//   autoplaySpeed: 2000,
-//   prevArrow: $('.control .prev'),
-//   responsive: [
-// 		{
-// 			breakpoint:576,
-// 			settings: {
-// 				slidesToShow:1,
-// 				slidesToScroll:1,
-// 			}
-// 		},
-// 		{
-// 			breakpoint:1250,
-// 			settings: {
-// 				slidesToShow:3,
-// 				slidesToScroll:3,
-// 			}
-// 		},
-		
-		
-// 	]
-  
+
+// $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
+//   if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+//       var e = $(this.hash);
+//       e = e.length ? e : $("[name=" + this.hash.slice(1) + "]"), e.length && (t.preventDefault(), $("html, body").animate({
+//           scrollTop: e.offset().top
+//       }, 600, function () {
+//           var t = $(e);
+//           if (t.focus(), t.is(":focus")) return !1;
+//           t.attr("tabindex", "-1"), t.focus()
+//       }))
+//   }
 // });
 
 
