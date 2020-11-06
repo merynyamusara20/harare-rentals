@@ -105,7 +105,8 @@
     <div class="search container" style="margin:20px !important;">
       <form action="post" class="d-flex">
         <input type="text" placeholder="Search For a Rental in Harare" role="combobox"
-          autocomplete="none"><button>Search</button>
+          autocomplete="none">
+          <button class="d-none d-xs-block">search</button>
       </form>
       <span class="dropdown-wrapper" aria-hidden="true"></span>
       <!-- Example split danger button -->
@@ -215,6 +216,9 @@
               <a class="dropdown-item" href="#">6+</a>
             </div>
           </div>
+        </li>
+        <li class="search-button d-block d-md-none">
+          <button >search</button>
         </li>
       </ul>
     </div>

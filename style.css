@@ -99,6 +99,15 @@ button, a:focus {
   background-color: #808080;
 }
 
+.currency-container ul li {
+  margin-bottom: 5px;
+}
+
+.currency-container ul li a {
+  color: black;
+  text-decoration: none;
+}
+
 nav.navbar {
   padding: 15px 50px;
   min-height: 3.75rem;
@@ -258,8 +267,12 @@ nav.navbar #navbar ul li a .login {
   background-color: white;
 }
 
+.modal {
+  z-index: 77777777;
+}
+
 .modal-content {
-  z-index: 2;
+  z-index: 555555;
 }
 
 .modal-content .modal-header {
@@ -1093,7 +1106,7 @@ section.submit {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px 45px;
 }
 
 section.submit p {
@@ -2648,7 +2661,11 @@ a.btn1 {
 }
 
 /* style the items (options), including the selected item: */
-.select-items div, .select-selected {
+.select-items {
+  left: -15px !important;
+}
+
+.select-items div, .select-items .select-selected {
   color: #212529;
   padding: 8px 8px;
   font-size: 12px;
@@ -2714,6 +2731,7 @@ a.btn1 {
   background-color: whitesmoke;
   overflow: hidden;
   padding: 0px 15px;
+  z-index: 222;
 }
 
 .rentals > div {
@@ -2750,11 +2768,6 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 99999;
-}
-
-.rentals > div > div > div:last-child .rentals-results > div {
-  z-index: 999999;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div p {
@@ -2766,12 +2779,14 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 30;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div .select-items div, .rentals > div > div > div:last-child .rentals-results > div .select-selected {
   color: #808080;
   padding: 8px 8px;
   font-size: 16px;
+  z-index: 300;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div a {
@@ -2820,7 +2835,7 @@ a.btn1 {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 100;
   background-color: transparent;
 }
 
@@ -3229,6 +3244,7 @@ a.btn1 {
   background-color: white;
   margin-top: 20px;
   position: relative;
+  z-index: 20;
 }
 
 .featured a.single {
@@ -3239,7 +3255,7 @@ a.btn1 {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 10;
 }
 
 .featured .ribbon {
@@ -3250,7 +3266,7 @@ a.btn1 {
   top: 97px;
   left: 5px;
   border-radius: 1px;
-  z-index: 99;
+  z-index: 20;
   text-decoration: none;
 }
 
@@ -3284,7 +3300,7 @@ a.btn1 {
   background-color: #808080;
   padding: 10px;
   font-size: 12px;
-  z-index: 99;
+  z-index: 10;
 }
 
 .featured > div:first-child > img {
@@ -3509,6 +3525,7 @@ a.button {
 
 .FEATURED {
   padding-bottom: 0;
+  z-index: 10;
 }
 
 .FEATURED > div:first-child {
@@ -3945,6 +3962,9 @@ nav.single-page {
 }
 
 @media (max-width: 576px) {
+  .modal {
+    top: 68px;
+  }
   .single-listings-card {
     background-color: whitesmoke;
     padding: 20px 0 !important;
@@ -4195,6 +4215,7 @@ nav.single-page {
   }
   .listings-hero .search form {
     width: 100%;
+    margin-bottom: 5px;
   }
   .listings-hero .search form > input {
     font-size: 12px;
@@ -4204,69 +4225,75 @@ nav.single-page {
   .listings-hero .search form button {
     height: 50px;
   }
-  .listings-hero .search > ul {
+  .listings-hero .search ul {
+    padding: 2px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search > ul .dropdown {
+  .listings-hero .search ul .dropdown {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
   }
-  .listings-hero .search > ul > li {
-    padding: 15px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .listings-hero .search ul li {
+    padding: 5px;
     background-color: #fff;
-    margin-bottom: 10px;
-    height: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-bottom: 6px;
+    height: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: left;
   }
-  .listings-hero .search > ul > li:nth-of-type(1) {
+  .listings-hero .search ul li:nth-of-type(1) {
     width: 100%;
   }
-  .listings-hero .search > ul > li:nth-of-type(2), .listings-hero .search > ul > li:nth-of-type(3) {
-    width: 48%;
-  }
-  .listings-hero .search > ul > li:nth-of-type(4), .listings-hero .search > ul > li:nth-of-type(5), .listings-hero .search > ul > li:nth-of-type(6) {
+  .listings-hero .search ul li:nth-of-type(2), .listings-hero .search ul li:nth-of-type(3) {
     width: 32%;
   }
-  .listings-hero .search > ul > li > div > a {
-    font-size: 16px;
-    color: black;
-    width: 100%;
+  .listings-hero .search ul li:nth-of-type(5), .listings-hero .search ul li:nth-of-type(6), .listings-hero .search ul li:nth-of-type(4) {
+    width: 32%;
+  }
+  .listings-hero .search ul li a {
+    color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    font-size: 14px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-menu {
-    min-width: auto;
+  .listings-hero .search ul .search-button {
+    width: 32%;
+    text-align: center;
+    background: #808080;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-item {
-    color: #000000;
-    padding: 0px 20px;
-    width: 100%;
+  .listings-hero .search ul .search-button button {
+    border: none;
+    background: #808080;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+    text-transform: capitalize;
+    color: #fff;
   }
   .heroe {
     height: 400px;
@@ -4429,6 +4456,7 @@ nav.single-page {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    padding: 50px 10px;
   }
   section.submit p {
     font-size: 20px;
@@ -5036,6 +5064,12 @@ nav.single-page {
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+  .mobile {
+    display: none;
+  }
+  h1 {
+    font-size: 19px !important;
+  }
   #navbar > ul > li:nth-child(3) {
     padding: 0 !important;
   }
@@ -5057,6 +5091,7 @@ nav.single-page {
   }
   .future {
     margin-bottom: 20px;
+    background-color: #fff;
   }
   .future .price {
     display: -webkit-box;
@@ -5075,11 +5110,19 @@ nav.single-page {
   .future .price img {
     height: 100%;
     width: 30%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .future .price h3, .future .price h4 {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .future #bg-green {
+    background-color: #02471a;
+    color: #ffff;
+  }
+  .future #bg-grey {
+    color: #ffff;
   }
   .future .fearture-items {
     display: -webkit-box !important;
@@ -5093,22 +5136,50 @@ nav.single-page {
     height: 260px;
   }
   .future p {
-    line-height: 1.4;
+    line-height: 1.3;
+    font-size: 13px;
   }
   .future h3 {
     margin: 8px 0;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 15px;
   }
   .future h5 {
-    font-size: 19px;
+    font-size: 18px;
+    font-weight: bold;
   }
   .future span {
-    font-size: 13px;
+    font-size: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .future span::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    color: #808080;
+    background: #808080;
+    margin-left: 31px;
+  }
+  .future span:last-of-type::after {
+    content: "";
+    display: none;
   }
   .future .button {
     width: 120px;
     margin: 0 0 0 auto;
+  }
+  .future .last {
+    padding: 20px;
+  }
+  .future .last > div {
+    margin: 15px 0;
   }
   .listings-hero {
     height: auto;
@@ -5126,19 +5197,23 @@ nav.single-page {
   }
   .listings-hero .search form {
     width: 100%;
+    margin-bottom: 6px;
   }
   .listings-hero .search form > input {
     font-size: 12px;
     height: 50px;
     font-size: 14px;
+    border: none;
   }
   .listings-hero .search form button {
     height: 50px;
+    display: none;
   }
   .listings-hero .search > ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   .listings-hero .search > ul .dropdown {
     width: 100%;
@@ -5222,22 +5297,24 @@ nav.single-page {
   }
   .heroe .search form button {
     height: 50px;
+    display: none !important;
   }
   .heroe .search ul {
-    padding: 8px 0;
+    padding: 2px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   .heroe .search ul .dropdown {
     width: 100%;
     text-align: center;
   }
   .heroe .search ul li {
-    padding: 20px;
+    padding: 5px;
     background-color: #fff;
-    margin-bottom: 10px;
-    height: 50px;
+    margin-bottom: 6px;
+    height: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5251,7 +5328,7 @@ nav.single-page {
     width: 100%;
   }
   .heroe .search ul li:nth-of-type(2), .heroe .search ul li:nth-of-type(3) {
-    width: 48%;
+    width: 32%;
   }
   .heroe .search ul li:nth-of-type(5), .heroe .search ul li:nth-of-type(6), .heroe .search ul li:nth-of-type(4) {
     width: 32%;
@@ -5265,7 +5342,30 @@ nav.single-page {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .heroe .search ul .search-button {
+    width: 32%;
+    text-align: center;
+    background: #808080;
+  }
+  .heroe .search ul .search-button button {
+    border: none;
+    background: #808080;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+    text-transform: capitalize;
+    color: #fff;
   }
   body section.heroe > div.search > ul > li > div > div {
     min-width: auto;
@@ -5281,6 +5381,12 @@ nav.single-page {
   }
   .carousel-caption > h1 {
     font-size: 28px;
+  }
+  section.submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   section.submit p {
     font-size: 25px;
@@ -5298,7 +5404,7 @@ nav.single-page {
   }
   section.submit form input {
     height: 40px;
-    border: 1px solid #000000;
+    border: 1px solid #808080;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -5318,6 +5424,12 @@ nav.single-page {
   .community > div > h2 {
     font-size: 18px;
     margin: 0;
+  }
+  .community > div > h2::after {
+    width: 21%;
+  }
+  .community > div > h2::before {
+    width: 21%;
   }
   .community > div p {
     text-align: center;
@@ -5356,7 +5468,13 @@ nav.single-page {
   }
   section.surbubs h1 {
     margin: 0;
-    font-size: 18px;
+    font-size: 19px;
+  }
+  section.surbubs h1::after {
+    width: 15%;
+  }
+  section.surbubs h1::before {
+    width: 15%;
   }
   section.surbubs p {
     font-size: 16px;
@@ -5449,7 +5567,7 @@ nav.single-page {
     top: 0;
   }
   section.surbubs .sub-details {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     height: 120px;
   }
   section.surbubs .sub-details .agent {
@@ -5541,16 +5659,30 @@ nav.single-page {
     color: white;
     margin-right: 5px;
   }
+  footer.main-footer .footer-inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer.main-footer .footer-inner ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   footer.main-footer .footer-inner ul li {
     padding-right: 8px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
   footer.main-footer .footer-inner ul li a {
-    font-size: 13px;
+    font-size: 11px;
   }
   footer.main-footer .footer-inner img {
-    height: 50px;
-    padding-top: 15px;
+    height: 22px;
+    padding-top: 0px;
   }
   footer.main-footer .last {
     -webkit-box-pack: center;
@@ -5558,8 +5690,8 @@ nav.single-page {
             justify-content: center;
   }
   footer.main-footer .last p {
-    font-size: 16px;
-    text-align: left;
+    font-size: 10px;
+    text-align: center;
     line-height: 20px;
   }
   .FEATURED {
@@ -5629,6 +5761,7 @@ nav.single-page {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    padding-top: 0;
   }
   .listings-hero .search {
     -webkit-box-orient: vertical;
@@ -5636,6 +5769,7 @@ nav.single-page {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    margin: 0 0 20px;
   }
   .listings-hero .search form {
     width: 100%;
@@ -5643,36 +5777,82 @@ nav.single-page {
   .listings-hero .search form > input {
     font-size: 12px;
   }
-  .listings-hero .search > ul {
+  .listings-hero .search form button {
+    display: none;
+  }
+  .listings-hero .search ul {
+    padding: 2px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search > ul > li {
+  .listings-hero .search ul .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+  .listings-hero .search ul li {
     padding: 5px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 48%;
     background-color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: left;
   }
-  .listings-hero .search > ul > li > div > a {
+  .listings-hero .search ul li:nth-of-type(1) {
+    width: 100%;
+  }
+  .listings-hero .search ul li:nth-of-type(2), .listings-hero .search ul li:nth-of-type(3) {
+    width: 32%;
+  }
+  .listings-hero .search ul li:nth-of-type(5), .listings-hero .search ul li:nth-of-type(6), .listings-hero .search ul li:nth-of-type(4) {
+    width: 32%;
+  }
+  .listings-hero .search ul li a {
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
     font-size: 14px;
-    color: black;
-    text-decoration: none;
-    min-width: auto;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-menu {
-    min-width: auto;
+  .listings-hero .search ul .search-button {
+    width: 32%;
+    text-align: center;
+    background: #808080;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-item {
-    color: #000000;
-    padding: 0px 20px;
+  .listings-hero .search ul .search-button button {
+    border: none;
+    background: #808080;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+    height: 100%;
+    width: 100%;
+    text-transform: capitalize;
+    color: #fff;
   }
   a.button {
     font-size: 10px;
     margin-right: 15px;
+  }
+  .rentals {
+    padding-top: 0;
   }
   .rentals > div > div > div:nth-child(2) > div > div:first-child .card > div > img {
     height: 280px;
@@ -5709,6 +5889,9 @@ nav.single-page {
   .card.agent img {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  body > section.popular-areas > div > h1::after, body > section.popular-areas > div > h1::before {
+    width: 25%;
   }
 }
 

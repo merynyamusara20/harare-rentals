@@ -38,11 +38,26 @@ document.onscroll = function() {
         }
     }
 
-$(".fixed-icon").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#nav").offset().top},
-        'slow');
+// $(".fixed-icon").click(function() {
+//     $('html,body').animate({
+//         scrollTop: $("#nav").offset().top},
+//         'slow');
+// });
+
+$('a.fixed-icon[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
+  if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+      var e = $(this.hash);
+      e = e.length ? e : $("[name=" + this.hash.slice(1) + "]"), e.length && (t.preventDefault(), $("html, body").animate({
+          scrollTop: e.offset().top
+      }, 600, function () {
+          var t = $(e);
+          if (t.focus(), t.is(":focus")) return !1;
+          t.attr("tabindex", "-1"), t.focus()
+      }))
+  }
 });
+
+
 
 $('.carousel').carousel();
 
@@ -76,47 +91,6 @@ $(document).ready(function(){
        
     }
     });
-
-  //   $('.owl-two').owlCarousel({
-  //     loop:true,
-  //  margin:10,
-  //  items:3,
-  //  autoplay:false,
-  //  autoplayTimeout:400000,
-  //   nav:true,
-  //  navigation:true,
-  // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
-  //  autoplayHoverPause:true,
-  //  responsive:{
-  //      0:{
-  //        items:1,
-       
-  //      },
-  //      768:{
-  //        items:2,   
-  //      },
-  //      1440:{
-  //         items:3, 
-        
-  //      },
-  //      576:{
-  //          items:1,
-  //          nav:true,
-           
-  //      }
-      
-  //  }
-  //  });
-
-  
-
-  //    // Custom Navigation Events
-  // $(".next").click(function(){
-  //   owl.trigger('owl.next');
-  // })
-  // $(".prev").click(function(){
-  //   owl.trigger('owl.prev');
-  // })
 
     
 
@@ -163,21 +137,6 @@ $(document).ready(function(){
   });
   
 });
-
-
-// $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (t) {
-//   if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-//       var e = $(this.hash);
-//       e = e.length ? e : $("[name=" + this.hash.slice(1) + "]"), e.length && (t.preventDefault(), $("html, body").animate({
-//           scrollTop: e.offset().top
-//       }, 600, function () {
-//           var t = $(e);
-//           if (t.focus(), t.is(":focus")) return !1;
-//           t.attr("tabindex", "-1"), t.focus()
-//       }))
-//   }
-// });
-
 
 
 
