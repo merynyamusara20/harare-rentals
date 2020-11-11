@@ -5,7 +5,7 @@ $('.showcase .item').hover(function (){
     $(this).find('.overlay').show();
 });
 
-$('.you i,.select-selected').on('click',function (){
+$('.custom-select').on('click',function (){
    $('.select-items').slideToggle();
 });
 
