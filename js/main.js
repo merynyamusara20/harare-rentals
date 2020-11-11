@@ -138,17 +138,12 @@ $(document).ready(function(){
   
 });
 
+// 
 
+$(".dropdown a").click(function(){
 
+  $(this).parents(".dropdown").find('.dropdown-toggle').text($(this).text());
+  $(this).parents(".dropdown").find('.dropdown-toggle').val($(this).text());
 
-
-
-
-
-
-
-
-
-
-
+});
 

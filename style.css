@@ -429,7 +429,6 @@ nav.navbar #navbar ul li a .login {
 .heroe .search form button {
   height: 2rem;
   border: none;
-  padding: 10px;
   font-size: 16px;
   text-transform: capitalize;
   color: white;
@@ -461,17 +460,26 @@ nav.navbar #navbar ul li a .login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.heroe .search ul li a input {
+  margin-right: 10px;
+}
+
 .heroe .search ul li .dropdown-item {
   color: #000000;
   padding: 5px 5px;
+}
+
+.heroe .search ul li .dropdown-item:hover {
+  color: #ffff;
+  background-color: #808080;
 }
 
 .popular-areas {
@@ -554,13 +562,12 @@ nav.navbar #navbar ul li a .login {
   display: block;
   color: white;
   font-size: 20px;
-  padding: 10px 0;
   text-decoration: none;
   font-family: 'Gotham';
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
+  margin: 18px auto;
 }
 
 .popular-areas .showcase .item .overlay-text a.btn {
@@ -669,7 +676,7 @@ section.surbubs h1 {
 section.surbubs h1::before, section.surbubs h1::after {
   content: '';
   background: #808080;
-  width: 10%;
+  width: 7.5%;
   height: 2px;
   margin: 0 15px;
 }
@@ -1061,6 +1068,10 @@ section.surbubs .carousel-item {
 }
 
 .community > div > div > div .card.bottom h2 {
+  text-align: center;
+}
+
+.community > div > div > div .card.bottom h2 a {
   font-size: 28px;
   color: #fff;
 }
@@ -1128,7 +1139,7 @@ section.submit form {
 
 section.submit form input {
   height: 40px;
-  border: 1px solid #808080;
+  border: 1px solid #808080 !important;
   width: 300px;
   padding: 0 10px;
   border-right: none;
@@ -2276,6 +2287,10 @@ a.btn1 {
   height: auto;
 }
 
+.card.agent #agent .modal-body .agent-name > div {
+  padding-bottom: 15px;
+}
+
 .card.agent #agent .modal-body .agent-name a.submit {
   margin-right: 20px;
   font-size: 14px;
@@ -2662,7 +2677,7 @@ a.btn1 {
 
 /* style the items (options), including the selected item: */
 .select-items {
-  left: -15px !important;
+  right: 0;
 }
 
 .select-items div, .select-items .select-selected {
@@ -2677,9 +2692,8 @@ a.btn1 {
 .select-items {
   position: absolute;
   background-color: #fff;
-  top: 100%;
-  left: 0;
-  right: 0;
+  top: 140%;
+  right: -20px;
   z-index: 99;
 }
 
@@ -2768,6 +2782,7 @@ a.btn1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div p {
@@ -3555,7 +3570,7 @@ a.button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 12px;
+  padding-bottom: 0px;
 }
 
 .FEATURED .priority-list .last p {
@@ -3605,10 +3620,11 @@ a.button {
   display: -ms-flexbox;
   display: flex;
   width: 260px;
+  padding-top: 2px;
 }
 
 .FEATURED .priority-list .last .prio-icons .icons .left, .FEATURED .priority-list .last .prio-icons .icons .right {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .FEATURED .priority-list .last .prio-icons .icons .left span, .FEATURED .priority-list .last .prio-icons .icons .right span {
@@ -3867,6 +3883,10 @@ body > section.heroe > div.search > ul > li > div > div {
   min-width: auto;
 }
 
+.listings-hero .search > ul > li > div > a input {
+  margin-right: 10px;
+}
+
 .listings-hero .search > ul > li > div > a .dropdown-menu {
   min-width: auto;
 }
@@ -3928,6 +3948,8 @@ nav.single-page {
 .social-cards .card input {
   height: 40px;
   width: 90%;
+  border: 1px #808080 solid;
+  padding-left: 12px;
 }
 
 .social-cards .card input:focus {
@@ -3935,6 +3957,9 @@ nav.single-page {
 }
 
 @media (max-width: 320px) {
+  section.rentals > div > div > div.col-md-12.col-sm-12.col-lg-8.col-12.order-1 > div > div.last > div.fearture-items > span::after {
+    margin-left: 4px;
+  }
   .heroe .search ul li a {
     font-size: 12px;
   }
@@ -3973,6 +3998,9 @@ nav.single-page {
     -webkit-box-shadow: 16px 8px 8px #fff;
             box-shadow: 16px 8px 8px #fff;
     background-color: white;
+  }
+  #nav > div > div.left.d-flex.align-items-center > li.search-icon a img {
+    height: 27px !important;
   }
   #navbar > ul > li:nth-child(3) {
     padding: 0 !important;
@@ -4016,9 +4044,9 @@ nav.single-page {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .future .carousel-item img {
     height: 260px;
@@ -4043,9 +4071,9 @@ nav.single-page {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .future span::after {
     content: "";
@@ -4053,10 +4081,13 @@ nav.single-page {
     height: 100%;
     color: #808080;
     background: #808080;
-    margin-left: 4px;
+    margin: auto;
+    justify-self: flex-end;
+    margin-left: 12px;
   }
   .future span:last-of-type::after {
     content: "";
+    display: none;
   }
   .future .button {
     width: 120px;
@@ -4075,9 +4106,6 @@ nav.single-page {
   }
   .currency-container ul li a {
     color: black;
-  }
-  .select-items {
-    left: -45px;
   }
   .select-items div, .select-selected {
     color: #808080;
@@ -4449,6 +4477,9 @@ nav.single-page {
   nav.navbar #navbar ul li:nth-of-type(3) {
     border-bottom: 1px solid #808080;
   }
+  #nav > div > div.left.d-flex.align-items-center > li > a > img {
+    height: 33px !important;
+  }
   section.submit {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -4521,7 +4552,7 @@ nav.single-page {
     background-position: center center;
     height: 200px;
   }
-  .community > div > div .card.bottom h2 {
+  .community > div > div .card.bottom h2 a {
     font-size: 20px !important;
     color: #fff;
     text-align: center;
@@ -5447,7 +5478,7 @@ nav.single-page {
     background-position: center center;
     height: 200px;
   }
-  .community > div > div .card.bottom h2 {
+  .community > div > div .card.bottom h2 a {
     font-size: 20px !important;
     color: #fff;
     text-align: center;
@@ -6060,7 +6091,7 @@ nav.single-page {
     width: 50px;
     padding: 10px;
   }
-  .community > div > div > div .card.bottom h2 {
+  .community > div > div > div .card.bottom h2 a {
     font-size: 24px;
   }
   .community > div > div > div .card.bottom a i.fa {
