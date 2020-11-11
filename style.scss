@@ -71,6 +71,9 @@ button,a:focus {
 	ul li{margin-bottom:5px;
 	a{color: black;text-decoration: none;;}}
 }
+input[type=checkbox], input[type=radio] {margin-right:10px !important;
+}
+input{border-radius:0% !important;}
 nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-display:flex;-webkit-align-items:center;-webkit-box-shadow:0 3px 5px rgba(57, 63, 72, 0.3);box-shadow:0 3px 5px rgba(57, 63, 72, 0.3);z-index: 999;width:100%;
 	.navbar-toggler{height: 45px;width:70px;
 		span{display: block;height:8px;width:100% ;background-color:#ff0000;border-radius:5px;
@@ -154,9 +157,11 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 			li{padding-right:30px;
 			  
 				a{font-size:.9rem;color: white;text-decoration: none;display: flex;justify-content:start;align-items: center;;
+					&::after{margin-left: auto;}
 					input{margin-right:10px;}
 				}
 				.dropdown-item{color: #000000;padding:5px 5px;
+					input{margin-right: 10px !important;}
 					&:hover{color:#ffff;background-color:#808080;}
 				}
 			}

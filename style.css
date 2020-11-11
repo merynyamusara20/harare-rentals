@@ -108,6 +108,14 @@ button, a:focus {
   text-decoration: none;
 }
 
+input[type=checkbox], input[type=radio] {
+  margin-right: 10px !important;
+}
+
+input {
+  border-radius: 0% !important;
+}
+
 nav.navbar {
   padding: 15px 50px;
   min-height: 3.75rem;
@@ -468,6 +476,10 @@ nav.navbar #navbar ul li a .login {
           align-items: center;
 }
 
+.heroe .search ul li a::after {
+  margin-left: auto;
+}
+
 .heroe .search ul li a input {
   margin-right: 10px;
 }
@@ -475,6 +487,10 @@ nav.navbar #navbar ul li a .login {
 .heroe .search ul li .dropdown-item {
   color: #000000;
   padding: 5px 5px;
+}
+
+.heroe .search ul li .dropdown-item input {
+  margin-right: 10px !important;
 }
 
 .heroe .search ul li .dropdown-item:hover {
