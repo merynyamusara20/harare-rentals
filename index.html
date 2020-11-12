@@ -8,7 +8,10 @@
   <!-- CSS only -->
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="fontawesome-5.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="style.css">
+  
   <title>Document</title>
 
 
@@ -122,24 +125,18 @@
       <span class="dropdown-wrapper" aria-hidden="true"></span>
       <!-- Example split danger button -->
       <ul class="nav">
-        
         <li>
           <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="true">
-              Property Type
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"  d="example-getting-started" multiple="multiple">
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="1"> Apartment/Flat</a>
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="2"> Commercial</a>
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="3"> Cottage</a>
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="4"> Developments</a>
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="5"> Farm/Smallholding</a>
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="5"> Hospitality </a>
-              <a class="dropdown-item" href="#"> <input type="checkbox" value="5"> House </a>
-
-            </div>
-            
+             <select type="text" class="multiselect" multiple="multiple" role="multiselect">          
+              <option value="0" selected="selected">Property Type</option>
+              <option value="1">Apartment/Flat</option>
+              <option value="2">Commercial</option>
+              <option value="3">Cottage</option>
+              <option value="4">Development</option>
+              <option value="5">Farm/Smallholding</option>
+              <option value="6">Hospitality</option>
+              <option value="7">House</option>
+            </select>  
           </div>
         </li>
         <li>
@@ -762,10 +759,13 @@
 
   <button id="back_to_top" title="Back To Top"><i class="fa fa-angle-up"></i></button>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
