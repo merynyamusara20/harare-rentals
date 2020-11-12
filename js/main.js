@@ -5,9 +5,11 @@ $('.showcase .item').hover(function (){
     $(this).find('.overlay').show();
 });
 
-$('.custom-select').on('click',function (){
+$('.custom-select,.select-selected').on('click',function (){
    $('.select-items').slideToggle();
-});
+}); 
+
+
 
 
  $('.currency-container').hide();
@@ -142,7 +144,26 @@ $(document).ready(function(){
 
 
 // 
+$(document).ready(function(){
+	
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) 
+		{
+			$('#back_to_top').fadeIn();
+		} 
+		else 
+		{
+			$('#back_to_top').fadeOut();
+		}
+	});
+	
 
+	$('#back_to_top').click(function(){
+		$('html, body').animate({scrollTop : 0},700);
+		return false;
+	});
+	
+});
 
 $(".dropdown a").click(function(){
 
@@ -151,3 +172,4 @@ $(".dropdown a").click(function(){
 
 });
 
+$('select').selectpicker();
