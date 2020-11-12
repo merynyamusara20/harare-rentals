@@ -1107,9 +1107,25 @@ body > section.heroe > div.search > ul > li > div > div{min-width:100%;}
 		}
 	}
 }
+
+.rentals > div > div > div:last-child .rentals-results > div a {
+    color: #808080;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999999;
+}
 #billboard > div.search.container > ul > li:nth-child(1) > div > div > button{display: flex;align-items: center;background-color: transparent;font-size: 14px;}
 
-.listings-hero{height:20vh;background: none;width: 100%;background-color: white; ;
+.listings-hero{height:18vh;background: none;width: 100%;background-color: white; ;
 	.overlay{background: none;}
 	.search{height: 100px;width: 100%;top:0;background-color: whitesmoke;flex-direction: row;align-items: center;justify-content: space-between;padding:5px 18px;
 		form{width: 50%;
@@ -2224,7 +2240,7 @@ a.button{font-size:10px;}
 		display: block;
 	 }	
 
-.listings-hero{height: 15vh;
+.listings-hero{
 	.search{top: 18px!important;margin: auto!important;;
 		
 		>ul{display: flex;align-items: center;;

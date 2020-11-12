@@ -5,7 +5,7 @@ $('.showcase .item').hover(function (){
     $(this).find('.overlay').show();
 });
 
-$('.custom-select,.select-selected').on('click',function (){
+$('.rentals-results>div:nth-of-type(2)').on('click',function (){
    $('.select-items').slideToggle();
 }); 
 
