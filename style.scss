@@ -2221,7 +2221,7 @@ body > section.popular-areas > div > h1{
 }}
 a.button{font-size:10px;}
 
-.listings-hero{height: 10vh;
+.listings-hero{height: 18vh;
 	.search{top: 18px!important;
 		form{width:40%;	
 		}
@@ -2289,7 +2289,9 @@ nav.navbar{padding:0 15px;
 
 }
 // // Medium devices (tablets, 768px and up)
-
+@media(min-width:1024px)and(max-width:1366px){
+	
+}
 @media (max-width:2400px){
 .single-listings-card{
 		.item{
