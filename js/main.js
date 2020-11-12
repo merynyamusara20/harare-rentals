@@ -172,4 +172,4 @@ $(".dropdown a").click(function(){
 
 });
 
-$('select').selectpicker();
+// 
