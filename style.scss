@@ -62,7 +62,7 @@ button,a:focus {
 
 
  // .main-image >img{width: 100px;height: 50px;object-fit: contain;}
- .pagination{margin: 20px 0!important;}
+.pagination{margin: 20px 0!important;}
 .page-link{color: black;>span{color: black;}}
 .active-1{background-color: #ff0000;color: white;}
 .hr-red{color: #ff0000;background-color: #808080;}
@@ -112,7 +112,6 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 //nav ends
 
 // currency exchange
-
 .currency-container{position: absolute;right: 200px;top:50px;background-color: white;-webkit-box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);box-shadow: 10px 5px 25px rgba(128, 128, 128, 0.692);display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;border-radius: 5px;z-index: 9999000009999;display:none;padding:20px;display:none;
 	
 	li:hover{background-color: white;
@@ -302,7 +301,9 @@ section.surbubs{margin:50px 0;
 				   h2{text-align: center;
 					    a{font-size: 28px;color:#fff;;}}
 				   a{
-					   i.fa{font-size:60px;background-color: transparent;color: white;}}
+					   i.fa{font-size:60px;background-color: transparent;color: white;}
+					   &:hover{text-decoration:none}
+					}
 				}
 			}
 		}
@@ -478,7 +479,6 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 
    &:focus,&:hover{outline:0;background-color: #ff0000;border:none;box-shadow:none;outline:0;}
 }
-	
 	.card-icons >i{margin:15px 30px 0 0;}
 	a.btn1{position: relative;right:-70%;background-color:#ff0000;padding:px;color:#fff;}
 
@@ -598,10 +598,8 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 			        }
 				}}}
 
-
-
-				///special
-	.single-listings-card{
+///special
+.single-listings-card{
 		.item{
 			.card{border: none;position: relative;margin-top:20px;
 					>a{position:absolute;background-color:#808080;color:#fff;padding: 6px 12px;top: 5px;left: 5px;z-index: 99;text-decoration: none;}
@@ -1057,11 +1055,9 @@ a.button{border-radius: 3px;padding: 6px 5px;color: black;margin-left: auto;text
 			   .icons{display: flex;width:260px;
 			       .left,.right{margin-bottom:0px;
 					  span{width:100px;font-size: 12px;margin-right:0px;display: inline-block;
-						i{width:15px}
+						i{width:15px;text-align: center;}
 					}
-
 				   }
-			   
 			   }
 			>span{margin-right: 10px;color: black;font-size: 10px;}
 			>a{color: #fff;border-radius: 2px;padding: 8px 10px;font-size: 10px;text-decoration: none;border: none;background: #808080;align-self:auto;}
@@ -1094,7 +1090,9 @@ body > section.heroe > div.search > ul > li > div > div{min-width:100%;}
 			li{padding-right: 30px;
 				a{font-size: 15px;color: #fff;text-decoration: none;text-decoration: none;}
 				.dropdown-menu{min-width:100%;
-					>.dropdown-item{justify-content: start;}
+					>.dropdown-item{justify-content: start;
+						&:hover{color:#ffff;background-color:#808080;}
+					}
 				}
 				.dropdown-item{color: #000000;padding:5px 10px;	
 				
@@ -1102,7 +1100,7 @@ body > section.heroe > div.search > ul > li > div > div{min-width:100%;}
 			}
 			ul{padding: 5px;top:15px!important;overflow: hidden;
 				li
-				   a{color: #000000!important;padding:  2px 0;font-size: 12px;}
+				   a{color: #000000!important;padding:  2px 0;font-size: .9rem;}
 			 } 
 		}
 	}
@@ -1123,22 +1121,27 @@ body > section.heroe > div.search > ul > li > div > div{min-width:100%;}
     justify-content: flex-end;
     z-index: 999999;
 }
-#billboard > div.search.container > ul > li:nth-child(1) > div > div > button{display: flex;align-items: center;background-color: transparent;font-size: 14px;}
+#billboard > div.search.container > ul > li:nth-child(1) > div > div > button{display: flex;align-items: center;background-color: transparent;font-size:.9rem}
 
-.listings-hero{height:18vh;background: none;width: 100%;background-color: white; ;
+.listings-hero{height:145px;background: none;width: 100%;background-color: white; ;
 	.overlay{background: none;}
 	.search{height: 100px;width: 100%;top:0;background-color: whitesmoke;flex-direction: row;align-items: center;justify-content: space-between;padding:5px 18px;
 		form{width: 50%;
 			>input{height: 35px;width: 100%;outline:0;background-position:10px center;padding-left: 38px;}
 			button{height: 40px;outline:0;background-color: #808080;}
 		}
-		>ul >li{padding-right:14px;
+		>ul{
+			 >li{padding-right:14px;
 			>div >a{font-size:14px;color: black;text-decoration: none;min-width:auto;
 				    input{margin-right:10px;}
 			      .dropdown-menu{min-width:auto;}
 				  .dropdown-item{color: #000000;padding:0px 20px;}
+			    }
 			}
-		}
+			ul{top:-5px!important;
+				li {padding:3px!important;font-size:.9rem}
+			}
+	   }
 	}
 }
 nav.single-page{background-color:white;}
@@ -1181,7 +1184,7 @@ nav.single-page{background-color:white;}
 	margin: auto;
   }
 
-  body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button{background: transparent;color: #fff;display:flex;align-items: center;padding: 0;height: 0;}
+  body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button{background: transparent;color: #fff;display:flex;align-items: center;padding: 0;height: 0;font-size: .9rem;}
   body > section.heroe > div.search > ul > li.active > div > div > ul{padding: 5px;overflow: hidden!important;
 	li a{color: #000000!important;}
 }
@@ -1715,9 +1718,7 @@ h1{font-size: 19px!important;}
 	   >div{margin:15px 0}
 
    }
-	 }
-
-	  
+	 }	  
 .listings-hero{height:auto;padding-top:70px;;
 	
 	.search{flex-direction: column;height:auto;padding-top:20px;width:100%;min-width:98%;
@@ -2221,8 +2222,8 @@ body > section.popular-areas > div > h1{
 }}
 a.button{font-size:10px;}
 
-.listings-hero{height: 18vh;
-	.search{top: 18px!important;
+.listings-hero{height:145px;
+	.search{top: 0!important;
 		form{width:40%;	
 		}
 		>ul{display: flex;align-items: center;;
@@ -2241,7 +2242,7 @@ a.button{font-size:10px;}
 	 }	
 
 .listings-hero{
-	.search{top: 18px!important;margin: auto!important;;
+	.search{top: 23px!important;margin: auto!important;;
 		
 		>ul{display: flex;align-items: center;;
 			 >li{

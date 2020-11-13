@@ -298,8 +298,8 @@ $(".dropdown a").click(function(){
           // possible options: 'text', 'value', 'both'
           filterBehavior: 'text',
           preventInputChangeEvent: false,        
-          nonSelectedText: 'None selected',            
-          nSelectedText: 'selected'
+          nonSelectedText: 'Property Types',            
+          nSelectedText: 'Property Types'
       },
       
       // Templates.

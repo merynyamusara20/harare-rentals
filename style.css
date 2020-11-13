@@ -1115,6 +1115,10 @@ section.surbubs .carousel-item {
   color: white;
 }
 
+.community > div > div > div .card.bottom a:hover {
+  text-decoration: none;
+}
+
 section.areas {
   margin: 150px 0;
 }
@@ -3676,6 +3680,7 @@ a.button {
 
 .FEATURED .priority-list .last .prio-icons .icons .left span i, .FEATURED .priority-list .last .prio-icons .icons .right span i {
   width: 15px;
+  text-align: center;
 }
 
 .FEATURED .priority-list .last .prio-icons > span {
@@ -3868,6 +3873,11 @@ body > section.heroe > div.search > ul > li > div > div {
           justify-content: start;
 }
 
+.hero .search ul li .dropdown-menu > .dropdown-item:hover {
+  color: #ffff;
+  background-color: #808080;
+}
+
 .hero .search ul li .dropdown-item {
   color: #000000;
   padding: 5px 10px;
@@ -3883,7 +3893,7 @@ body > section.heroe > div.search > ul > li > div > div {
 a {
   color: #000000 !important;
   padding: 2px 0;
-  font-size: 12px;
+  font-size: .9rem;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div a {
@@ -3912,11 +3922,11 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: transparent;
-  font-size: 14px;
+  font-size: .9rem;
 }
 
 .listings-hero {
-  height: 18vh;
+  height: 145px;
   background: none;
   width: 100%;
   background-color: white;
@@ -3984,6 +3994,15 @@ a {
 .listings-hero .search > ul > li > div > a .dropdown-item {
   color: #000000;
   padding: 0px 20px;
+}
+
+.listings-hero .search > ul ul {
+  top: -5px !important;
+}
+
+.listings-hero .search > ul ul li {
+  padding: 3px !important;
+  font-size: .9rem;
 }
 
 nav.single-page {
@@ -4081,6 +4100,7 @@ body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
           align-items: center;
   padding: 0;
   height: 0;
+  font-size: .9rem;
 }
 
 body > section.heroe > div.search > ul > li.active > div > div > ul {
@@ -6533,10 +6553,10 @@ body > section.heroe > div.search > ul > li.active > div > select {
     font-size: 10px;
   }
   .listings-hero {
-    height: 18vh;
+    height: 145px;
   }
   .listings-hero .search {
-    top: 18px !important;
+    top: 0 !important;
   }
   .listings-hero .search form {
     width: 40%;
@@ -6559,7 +6579,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     display: block;
   }
   .listings-hero .search {
-    top: 18px !important;
+    top: 23px !important;
     margin: auto !important;
   }
   .listings-hero .search > ul {
