@@ -172,7 +172,10 @@ $(".dropdown a").click(function(){
 
 });
 
-
+$('#search-icon').click(function(){
+    $('#billboard').toggle();
+    $('#billbo').toggle();
+})
 
 
 

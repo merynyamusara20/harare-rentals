@@ -22,8 +22,8 @@
     <div class="container">
     <a class="navbar-brand main-img" href="index.html"><img src="images/harare rentals logo.png" alt=""></a>
     <div class="left d-flex align-items-center">
-      <li class="search-icon d-flex d-lg-none">
-        <a href="#billboard" data-toggle="collapse"><img src="images/search-icon.png" alt=""
+      <li class="search-icon d-flex d-lg-none" id="search-icon">
+        <a href="#billboard"><img src="images/search-icon.png" alt=""
             style="height:30px;"></a>
       </li>
       <li class="nav-item d-flex d-lg-none">
@@ -100,9 +100,9 @@
     </div>
   </div>
 
-  <section class="hero listings-hero collapse d-block d-lg-none" id="billboard">
+  <section class="hero listings-hero " id="billboard">
     <div class="overlay"> </div>
-    <div class="search container" style="margin:20px auto!important;">
+    <div class="search container" style="margin:0px auto!important;">
       <form action="post" class="d-flex">
         <input type="text" placeholder="Search For a Rental in Harare" role="combobox"
           autocomplete="none">

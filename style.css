@@ -173,6 +173,7 @@ nav.navbar #navbar ul {
 nav.navbar #navbar ul li {
   margin: 0px;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 nav.navbar #navbar ul li:nth-of-type(4) {
@@ -199,13 +200,6 @@ nav.navbar #navbar ul li:nth-of-type(3) {
 
 nav.navbar #navbar ul li:nth-of-type(3) a {
   color: white;
-}
-
-nav.navbar #navbar ul li:nth-of-type(3) a:hover {
-  background: #e93f33;
-  color: white;
-  border-radius: 5px;
-  height: 30px;
 }
 
 nav.navbar #navbar ul li:last-of-type span {
@@ -460,6 +454,19 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.heroe .search ul.nav li:first-child {
+  position: relative;
+  top: 0;
+}
+
+.heroe .search ul.nav li:first-child ::after {
+  position: relative;
+  top: -1px;
+  border-top: .3em solid;
+  border-right: .4em solid transparent;
+  border-left: .4em solid transparent;
 }
 
 .heroe .search ul.nav li:first-child .dropdown-menu {
@@ -2737,7 +2744,7 @@ a.btn1 {
 .select-items {
   position: absolute;
   background-color: #fff;
-  top: 140%;
+  top: 110%;
   right: -20px;
   z-index: 99;
 }
@@ -3010,7 +3017,7 @@ a.btn1 {
 }
 
 .rentals > div > div > div:last-child .card > div > div > div:last-child > a {
-  border-radius: 3px;
+  border-radius: 2px;
   padding: 8px 10px;
   color: #fff;
   margin-left: auto;
@@ -3018,6 +3025,7 @@ a.btn1 {
   font-size: 10px;
   text-decoration: none;
   background-color: #808080;
+  width: 100px;
 }
 
 .rentals > div > div > div:nth-child(2) > div {
@@ -3647,6 +3655,10 @@ a.button {
   border-radius: 3px;
 }
 
+.FEATURED .priority-list .last hr {
+  margin-top: 0.7rem !important;
+}
+
 .FEATURED .priority-list .last .prio-icons {
   text-align: left;
   padding: 0 10px;
@@ -3889,11 +3901,46 @@ body > section.heroe > div.search > ul > li > div > div {
   overflow: hidden;
 }
 
-.hero .search ul ul li
-a {
+.hero .search ul ul li a {
   color: #000000 !important;
   padding: 2px 0;
   font-size: .9rem;
+}
+
+body > section.heroe > div.search > ul > li.active > div > div > ul > li, section.listings-hero > div.search > ul > li.active > div > div > ul > li {
+  cursor: pointer;
+}
+
+body > section.heroe > div.search > ul > li.active > div > div > ul > li:hover button, body > section.heroe > div.search > ul > li.active > div > div > ul > li:focus button, section.listings-hero > div.search > ul > li.active > div > div > ul > li:hover button, section.listings-hero > div.search > ul > li.active > div > div > ul > li:focus button {
+  background-color: transparent;
+}
+
+body > section.heroe > div.search > ul > li.active > div > div > ul > li:hover a, body > section.heroe > div.search > ul > li.active > div > div > ul > li:hover label, body > section.heroe > div.search > ul > li.active > div > div > ul > li:focus a, body > section.heroe > div.search > ul > li.active > div > div > ul > li:focus label, section.listings-hero > div.search > ul > li.active > div > div > ul > li:hover a, section.listings-hero > div.search > ul > li.active > div > div > ul > li:hover label, section.listings-hero > div.search > ul > li.active > div > div > ul > li:focus a, section.listings-hero > div.search > ul > li.active > div > div > ul > li:focus label {
+  color: #ffff;
+  background-color: #808080;
+  width: 100%;
+}
+
+body > section.heroe > div.search > ul > li:nth-child(1) > div > div > ul li {
+  cursor: pointer;
+  width: 100%;
+  padding-right: 0;
+}
+
+body > section.heroe > div.search > ul > li.active > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: unset;
+  line-height: 0;
+}
+
+#billbo > div.search.container > ul > li:nth-child(1) > div > div > button {
+  background-color: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div a {
@@ -3923,6 +3970,7 @@ a {
           align-items: center;
   background-color: transparent;
   font-size: .9rem;
+  line-height: 0;
 }
 
 .listings-hero {
@@ -3972,6 +4020,13 @@ a {
   background-color: #808080;
 }
 
+.listings-hero .search > ul {
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .listings-hero .search > ul > li {
   padding-right: 14px;
 }
@@ -4003,6 +4058,10 @@ a {
 .listings-hero .search > ul ul li {
   padding: 3px !important;
   font-size: .9rem;
+}
+
+.search.container > ul > li.active > div > select > option:hover {
+  background-color: #808080;
 }
 
 nav.single-page {
@@ -4095,12 +4154,23 @@ body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding: 0;
-  height: 0;
+  height: 100%;
   font-size: .9rem;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+  line-height: 0;
+}
+
+body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button::after {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body > section.heroe > div.search > ul > li.active > div > div > ul {
@@ -4145,6 +4215,13 @@ body > section.heroe > div.search > ul > li.active > div > select {
   footer.main-footer .footer-inner ul li a {
     font-size: 12px !important;
   }
+}
+
+#billboard {
+  position: absolute;
+  z-index: 99;
+  top: 0%;
+  display: none;
 }
 
 @media (max-width: 576px) {
@@ -4240,6 +4317,11 @@ body > section.heroe > div.search > ul > li.active > div > select {
     font-size: 18px;
     font-weight: bold;
   }
+  .future h5:last-of-type {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Gotham';
+  }
   .future span {
     font-size: 11px;
     -webkit-box-align: center;
@@ -4274,7 +4356,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     padding: 10px;
   }
   .future .last > div {
-    margin: 15px 0;
+    margin: 8px 0 15px 0;
   }
   .currency-container {
     left: 0;
@@ -4417,6 +4499,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     padding-top: 20px;
     width: 100%;
     min-width: 98%;
+    padding: 15px 15px;
   }
   .listings-hero .search form {
     width: 100%;
@@ -4435,12 +4518,13 @@ body > section.heroe > div.search > ul > li.active > div > select {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
   }
   .listings-hero .search ul .dropdown {
     width: 100%;
   }
   .listings-hero .search ul li {
-    padding: 5px;
+    padding: 8px;
     background-color: #fff;
     margin-bottom: 6px;
     height: 45px;
@@ -4557,6 +4641,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 2px 0 !important;
   }
   .heroe .search ul .dropdown {
     width: 100%;
@@ -4641,15 +4726,18 @@ body > section.heroe > div.search > ul > li.active > div > select {
     z-index: 56567890098;
   }
   nav.navbar .navbar-toggler {
-    width: 40px;
     position: relative;
+    padding-right: 0 !important;
+    width: 40px !important;
   }
   nav.navbar .navbar-toggler span {
     height: 13%;
-    width: 75%;
+    width: 100% !important;
+    margin-left: auto;
   }
   nav.navbar .navbar-toggler span:nth-of-type(2) {
     margin: 5px 0;
+    margin-left: auto !important;
   }
   nav.navbar .navbar-toggler li.nav-item {
     margin-left: auto;
@@ -4696,6 +4784,10 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   nav.navbar #navbar ul li:nth-of-type(3) {
     border-bottom: 1px solid #808080;
+    height: auto;
+  }
+  nav.navbar #navbar ul li:nth-of-type(3) a {
+    padding-bottom: 10px;
   }
   #nav > div > div.left.d-flex.align-items-center > li > a > img {
     height: 33px !important;
@@ -5315,6 +5407,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+  #billboard {
+    position: absolute;
+    z-index: 99;
+    top: 18%;
+    display: none;
+  }
   body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
     color: #000000;
     height: 100%;
@@ -6203,6 +6301,11 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #billboard {
+    position: absolute;
+    z-index: 99;
+    top: 7%;
+  }
   #navbar > ul > li:nth-child(3) {
     padding: 0 !important;
   }
@@ -6403,6 +6506,11 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   footer.main-footer .footer-inner img {
     height: 40px;
+  }
+  .listings-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .listings-hero .search {
     height: 80px;
