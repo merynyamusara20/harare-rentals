@@ -4336,6 +4336,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .future h3 {
     margin: 8px 0;
     font-size: 15px;
+    font-weight: bold;
   }
   .future h5 {
     font-size: 18px;
@@ -4548,7 +4549,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
   }
   .listings-hero .search ul li {
-    padding: 8px;
+    padding: 5px 12px;
     background-color: #fff;
     margin-bottom: 6px;
     height: 45px;
@@ -4672,7 +4673,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     text-align: center;
   }
   .heroe .search ul li {
-    padding: 5px;
+    padding: 5px 12px;
     background-color: #fff;
     margin-bottom: 6px;
     height: 45px;
@@ -4684,7 +4685,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
             align-items: center;
     width: 100%;
     text-align: left;
-    padding-right: 5px !important;
+    padding-right: 12px !important;
   }
   .heroe .search ul li:nth-of-type(1) {
     width: 100%;
