@@ -152,7 +152,7 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 			button{height:2rem;border: none;font-size: 16px;text-transform:capitalize;color:white;background-color:#808080;;outline:0;display: flex;justify-content: center;align-items: center;}
 		}
 		ul.nav{padding:8px 0 ;display: flex;align-items: center;
-			li:first-child{position: relative;top:0;
+			li:first-child{position: relative;top:1px;height: 100%;;
 				::after{position: relative;top:-1px;    border-top: .3em solid;border-right: .4em solid transparent;border-left: .4em solid transparent;}
 				.dropdown-menu{min-width: 13rem!important;}
 			}
@@ -167,7 +167,7 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 			}
 			ul{padding: 5px;top:15px!important;overflow: hidden;
 			   li
-				  a{color: #000000!important;padding:  2px 0;}
+				  a{color: #000000!important;padding:  3px 0;}
 			}  
 		}
 
@@ -1108,6 +1108,7 @@ body > section.heroe > div.search > ul > li > div > div{min-width:100%;}
 	}
 }
 body > section.heroe > div.search > ul > li.active > div > div > ul > li , section.listings-hero > div.search > ul > li.active > div > div > ul > li{cursor:pointer;
+	a,label{margin: 1px 0;}
 	&:hover,&:focus{
 		button{background-color: transparent;}
 		a,label{color:#ffff;background-color:#808080;width:100%;}}

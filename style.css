@@ -458,7 +458,8 @@ nav.navbar #navbar ul li a .login {
 
 .heroe .search ul.nav li:first-child {
   position: relative;
-  top: 0;
+  top: 1px;
+  height: 100%;
 }
 
 .heroe .search ul.nav li:first-child ::after {
@@ -519,7 +520,7 @@ nav.navbar #navbar ul li a .login {
 .heroe .search ul.nav ul li
 a {
   color: #000000 !important;
-  padding: 2px 0;
+  padding: 3px 0;
 }
 
 .popular-areas {
@@ -3907,6 +3908,10 @@ body > section.heroe > div.search > ul > li > div > div {
 
 body > section.heroe > div.search > ul > li.active > div > div > ul > li, section.listings-hero > div.search > ul > li.active > div > div > ul > li {
   cursor: pointer;
+}
+
+body > section.heroe > div.search > ul > li.active > div > div > ul > li a, body > section.heroe > div.search > ul > li.active > div > div > ul > li label, section.listings-hero > div.search > ul > li.active > div > div > ul > li a, section.listings-hero > div.search > ul > li.active > div > div > ul > li label {
+  margin: 1px 0;
 }
 
 body > section.heroe > div.search > ul > li.active > div > div > ul > li:hover button, body > section.heroe > div.search > ul > li.active > div > div > ul > li:focus button, section.listings-hero > div.search > ul > li.active > div > div > ul > li:hover button, section.listings-hero > div.search > ul > li.active > div > div > ul > li:focus button {
