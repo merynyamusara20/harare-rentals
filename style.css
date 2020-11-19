@@ -77,6 +77,12 @@ button, a:focus {
   box-shadow: none;
 }
 
+.multiselect {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .multiselect-container.dropdown-menu.custom-multi li:hover {
   background: #808080;
 }
