@@ -61,7 +61,7 @@ button,a:focus {
   }
 
 
-  .multiselect{height:fit-content;}
+  .multiselect{height:fit-content;display:flex;align-items: center;line-height: 0;}
   .multiselect-container.dropdown-menu.custom-multi li:hover{
 	background: #808080;
 	a,label{color:#ffff;}
@@ -158,7 +158,7 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 		}
 		ul.nav{padding:8px 0 ;display: flex;align-items: center;
 			li:first-child{height: 100%;;
-				::after{position: relative;top:2px;border-top: .3em solid;border-right: .4em solid transparent;border-left: .4em solid transparent;}
+				::after{border-top: .3em solid;border-right: .4em solid transparent;border-left: .4em solid transparent;}
 				.dropdown-menu{min-width: 13rem!important;}
 			}
 			li{padding-right:30px;

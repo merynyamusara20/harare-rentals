@@ -81,6 +81,13 @@ button, a:focus {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0;
 }
 
 .multiselect-container.dropdown-menu.custom-multi li:hover {
@@ -475,8 +482,6 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search ul.nav li:first-child ::after {
-  position: relative;
-  top: 2px;
   border-top: .3em solid;
   border-right: .4em solid transparent;
   border-left: .4em solid transparent;
