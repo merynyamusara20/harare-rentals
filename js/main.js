@@ -180,6 +180,7 @@ $('#search-icon').click(function(){
 
 
 
+
 /**
  * bootstrap-multiselect.js
  * https://github.com/davidstutz/bootstrap-multiselect

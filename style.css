@@ -3789,9 +3789,7 @@ body > section.heroe > div.search > ul > li > div > div {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 30px;
-  position: relative;
   z-index: 999;
-  top: 9%;
 }
 
 .hero .search h1 {
@@ -3935,12 +3933,26 @@ body > section.heroe > div.search > ul > li.active > div > div {
   line-height: 0;
 }
 
+#billbo > div.search.container > ul > li:nth-child(1) > div > div {
+  width: 100%;
+}
+
 #billbo > div.search.container > ul > li:nth-child(1) > div > div > button {
   background-color: transparent;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
 }
 
 .rentals > div > div > div:last-child .rentals-results > div a {
@@ -4021,7 +4033,7 @@ body > section.heroe > div.search > ul > li.active > div > div {
 }
 
 .listings-hero .search > ul {
-  width: 50%;
+  width: 48%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5404,10 +5416,14 @@ body > section.heroe > div.search > ul > li.active > div > select {
   body > section.pt-5.pb-5.single-listings-card > div > div.row.align-items-center > div:nth-child(1) > h3 {
     font-size: 24px;
   }
+  #billbo {
+    position: absolute;
+    z-index: 99;
+  }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
-  #billboard {
+  #billboard, #billbo {
     position: absolute;
     z-index: 99;
     top: 18%;
@@ -6704,6 +6720,9 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (max-width: 991px) {
+  #billbo {
+    display: none;
+  }
   nav.navbar {
     padding: 0 15px;
   }
