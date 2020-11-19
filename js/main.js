@@ -858,5 +858,3 @@ $('#search-icon').click(function(){
 
 }(window.jQuery);
 
-
-// 

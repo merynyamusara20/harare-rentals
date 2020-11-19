@@ -77,6 +77,14 @@ button, a:focus {
   box-shadow: none;
 }
 
+.multiselect-container.dropdown-menu.custom-multi li:hover {
+  background: #808080;
+}
+
+.multiselect-container.dropdown-menu.custom-multi li:hover a, .multiselect-container.dropdown-menu.custom-multi li:hover label {
+  color: #ffff;
+}
+
 .pagination {
   margin: 20px 0 !important;
 }
@@ -457,14 +465,12 @@ nav.navbar #navbar ul li a .login {
 }
 
 .heroe .search ul.nav li:first-child {
-  position: relative;
-  top: 1px;
   height: 100%;
 }
 
 .heroe .search ul.nav li:first-child ::after {
   position: relative;
-  top: -1px;
+  top: 2px;
   border-top: .3em solid;
   border-right: .4em solid transparent;
   border-left: .4em solid transparent;
@@ -4168,20 +4174,16 @@ nav.single-page {
 body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
   background: transparent;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   padding: 0;
-  height: 100%;
   font-size: .9rem;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
-  line-height: 0;
+  line-height: -1;
 }
 
 body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button::after {
@@ -4244,13 +4246,18 @@ body > section.heroe > div.search > ul > li.active > div > select {
 @media (max-width: 576px) {
   body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
     color: #000000;
-    height: 100%;
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body > section.heroe > div.search > ul > li.active > div > div > ul {
     padding: 5px;
@@ -5436,13 +5443,18 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
     color: #000000;
-    height: 100%;
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body > section.heroe > div.search > ul > li.active > div > div > ul {
     padding: 5px;
