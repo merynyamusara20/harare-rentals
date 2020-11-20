@@ -77,6 +77,12 @@ button, a:focus {
   box-shadow: none;
 }
 
+.hidden {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .multiselect {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -87,7 +93,8 @@ button, a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 0;
+  height: 100%;
+  position: relative;
 }
 
 .multiselect-container.dropdown-menu.custom-multi li:hover {
@@ -477,14 +484,13 @@ nav.navbar #navbar ul li a .login {
           align-items: center;
 }
 
-.heroe .search ul.nav li:first-child {
-  height: 100%;
-}
-
 .heroe .search ul.nav li:first-child ::after {
   border-top: .3em solid;
   border-right: .4em solid transparent;
   border-left: .4em solid transparent;
+  position: absolute;
+  right: -16px;
+  top: 44%;
 }
 
 .heroe .search ul.nav li:first-child .dropdown-menu {
@@ -4085,10 +4091,6 @@ body > section.heroe > div.search > ul > li.active > div > div {
   padding: 0px 20px;
 }
 
-.listings-hero .search > ul ul {
-  top: -5px !important;
-}
-
 .listings-hero .search > ul ul li {
   padding: 3px !important;
   font-size: .9rem;
@@ -4255,6 +4257,14 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (max-width: 576px) {
+  .heroe .search ul.nav li:first-child ::after {
+    border-top: .3em solid;
+    border-right: .4em solid transparent;
+    border-left: .4em solid transparent;
+    position: absolute;
+    right: -2px;
+    top: 44%;
+  }
   body > section.heroe > div.search > ul > li:nth-child(1) > div > div > button {
     color: #000000;
     -webkit-box-flex: 100%;
@@ -4684,7 +4694,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     text-align: center;
   }
   .heroe .search ul li {
-    padding: 5px 12px;
+    padding: 5px 7px;
     background-color: #fff;
     margin-bottom: 6px;
     height: 45px;
@@ -6346,6 +6356,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #billbo > div.search.container > ul > li:nth-child(1) > div > div > button {
+    font-size: 9px;
+  }
+  #billbo > div.search.container > ul > li:nth-child(1) > div > div > button::after {
+    margin-bottom: 2px;
+  }
   #billboard {
     position: absolute;
     z-index: 99;
@@ -6721,6 +6737,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 58%;
   }
   .listings-hero .search > ul > li > div > a {
     font-size: 14px;

@@ -165,17 +165,14 @@ $(document).ready(function(){
 	
 });
 
-$(".dropdown a").click(function(){
+// $("#dropdownMenuLink").click(function(){
 
-  $(this).parents(".dropdown").find('.dropdown-toggle').text($(this).text());
-  $(this).parents(".dropdown").find('.dropdown-toggle').val($(this).text());
+//   $(this).parents(".dropdown").find('.dropdown-mennu').text($(this).text());
+//   $(this).parents(".dropdown").find('.dropdown-menu').val($(this).text());
 
-});
+// });
 
-$('#search-icon').click(function(){
-    $('#billboard').toggle();
-    $('#billbo').toggle();
-})
+
 
 
 
@@ -858,3 +855,99 @@ $('#search-icon').click(function(){
 
 }(window.jQuery);
 
+
+$(".dropdown").on("click", ".dropdown-toggle", function(e) { 
+    e.preventDefault();
+    $(this).parent().addClass("show");
+    $(this).attr("aria-expanded", "true");
+    $(this).next().addClass("show"); 
+  });
+
+
+
+
+var x, i, j, l, ll, selElmnt, a, b, c;
+/* Look for any elements with the class "custom-select": */
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /* For each element, create a new DIV that will act as the selected item: */
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /* For each element, create a new DIV that will contain the option list: */
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /* For each option in the original select element,
+    create a new DIV that will act as an option item: */
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /* When an item is clicked, update the original select box,
+        and the selected item: */
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+    /* When the select box is clicked, close any other select boxes,
+    and open/close the current select box: */
+    e.stopPropagation();
+    closeAllSelect(this);
+    this.nextSibling.classList.toggle("select-hide");
+    this.classList.toggle("select-arrow-active");
+  });
+}
+
+
+
+/* If the user clicks anywhere outside the select box,
+then close all select boxes: */
+// document.addEventListener("click", closeAllSelect);
+//   function initMap() {
+//     // The location of Uluru
+//     var uluru = {lat: -25.344, lng: 131.036};
+//     // The map, centered at Uluru
+//     var map = new google.maps.Map(
+//         document.getElementById('map'), {zoom: 4, center: uluru});
+//     // The marker, positioned at Uluru
+//     var marker = new google.maps.Marker({position: uluru, map: map});
+    
+//   }
+
+var textFieldVisible = true;
+
+document.querySelector('#search-icon').addEventListener('click', function() {
+
+  $('#billbo').toggleClass('hidden');
+  
+});
+
+
+$('#search-icon').click(function(){
+    $('#billboard').toggle();
+    // $('#billbo').toggle();
+})
+  
