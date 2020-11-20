@@ -165,12 +165,7 @@ $(document).ready(function(){
 	
 });
 
-// $("#dropdownMenuLink").click(function(){
 
-//   $(this).parents(".dropdown").find('.dropdown-mennu').text($(this).text());
-//   $(this).parents(".dropdown").find('.dropdown-menu').val($(this).text());
-
-// });
 
 
 
@@ -857,7 +852,7 @@ $(document).ready(function(){
 
 
 $(".dropdown").on("click", ".dropdown-toggle", function(e) { 
-    e.preventDefault();
+    // e.preventDefault();
     $(this).parent().addClass("show");
     $(this).attr("aria-expanded", "true");
     $(this).next().addClass("show"); 
@@ -937,7 +932,7 @@ then close all select boxes: */
     
 //   }
 
-var textFieldVisible = true;
+// var textFieldVisible = true;
 
 document.querySelector('#search-icon').addEventListener('click', function() {
 
@@ -950,4 +945,4 @@ $('#search-icon').click(function(){
     $('#billboard').toggle();
     // $('#billbo').toggle();
 })
-  
+

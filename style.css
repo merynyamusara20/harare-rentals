@@ -536,7 +536,6 @@ nav.navbar #navbar ul li a .login {
 
 .heroe .search ul.nav ul {
   padding: 5px;
-  top: 15px !important;
   overflow: hidden;
 }
 
@@ -3883,7 +3882,7 @@ body > section.heroe > div.search > ul > li > div > div {
 }
 
 .hero .search ul li:first-child .dropdown-menu {
-  min-width: 12rem !important;
+  min-width: 13rem !important;
 }
 
 .hero .search ul li {
@@ -3919,7 +3918,6 @@ body > section.heroe > div.search > ul > li > div > div {
 
 .hero .search ul ul {
   padding: 5px;
-  top: 15px !important;
   overflow: hidden;
 }
 
@@ -4092,12 +4090,18 @@ body > section.heroe > div.search > ul > li.active > div > div {
 }
 
 .listings-hero .search > ul ul li {
-  padding: 3px !important;
   font-size: .9rem;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.search.container > ul > li.active > div > select > option:hover {
-  background-color: #808080;
+.listings-hero .search > ul ul li a {
+  width: 100%;
 }
 
 nav.single-page {
@@ -4281,7 +4285,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
             align-items: center;
   }
   body > section.heroe > div.search > ul > li.active > div > div > ul {
-    padding: 5px;
+    padding: 6px;
   }
   body > section.heroe > div.search > ul > li.active > div > div > ul li a {
     color: #000000 !important;
@@ -4634,12 +4638,9 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   .listings-hero .search ul ul li {
     width: 100% !important;
-    height: 20px;
+    height: 22px;
     border: none;
     outline: 0;
-  }
-  .listings-hero .search ul ul li a {
-    padding: 7px 0 !important;
   }
   #billboard > div.search.container > ul > li:nth-child(1) > div > div {
     width: 100%;
@@ -4687,7 +4688,6 @@ body > section.heroe > div.search > ul > li.active > div > select {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2px 0 !important;
   }
   .heroe .search ul .dropdown {
     width: 100%;
@@ -4756,15 +4756,13 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   .heroe .search ul ul {
     overflow: hidden !important;
+    padding: 5px !important;
   }
   .heroe .search ul ul li {
     width: 100% !important;
-    height: 20px;
+    height: 21px;
     border: none;
     outline: 0;
-  }
-  .heroe .search ul ul li a {
-    padding: 7px 0 !important;
   }
   nav.navbar {
     padding: 0 15px;
