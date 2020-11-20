@@ -6721,6 +6721,9 @@ body > section.heroe > div.search > ul > li.active > div > select {
   a.button {
     font-size: 10px;
   }
+  #billbo > div.search.container > ul > li:nth-child(1) > div > div > button {
+    font-size: 14px;
+  }
   .listings-hero {
     height: 145px;
   }
@@ -6747,6 +6750,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
 @media (min-width: 991px) {
   .collapse:not(.show) {
     display: block;
+  }
+  #billbo > div.search.container > ul > li:nth-child(1) > div > div > button {
+    font-size: 14px;
+  }
+  #billbo > div.search.container > ul > li:nth-child(1) > div > div > button::after {
+    margin-bottom: 2px;
   }
   .listings-hero .search {
     top: 23px !important;

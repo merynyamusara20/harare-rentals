@@ -2062,9 +2062,6 @@ body > section.popular-areas > div > h1{
 	&::after,&::before{width:25%;}
 }
 }
-
-
-
 // Medium devices (tablets, 768px and up)
 @media (min-width:768px)  and (max-width:991px){
 	#billbo > div.search.container > ul > li:nth-child(1) > div > div > button {font-size:9px;
@@ -2277,7 +2274,9 @@ body > section.popular-areas > div > h1{
 	}
 }}
 a.button{font-size:10px;}
-
+#billbo > div.search.container > ul > li:nth-child(1) > div > div > button {font-size:14px;
+	// &::after{margin-bottom:2px;}
+}
 .listings-hero{height:145px;
 	.search{top: 0!important;
 		form{width:40%;	
@@ -2296,7 +2295,9 @@ a.button{font-size:10px;}
 	.collapse:not(.show) {
 		display: block;
 	 }	
-	
+	 #billbo > div.search.container > ul > li:nth-child(1) > div > div > button {font-size:14px;
+		&::after{margin-bottom:2px;}
+	}
 .listings-hero{
 	.search{top: 23px!important;margin: auto!important;;
 		
