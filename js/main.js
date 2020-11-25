@@ -21,7 +21,10 @@ $(".btnn").click(function() {
   $(".drop-menu").toggle();  
 });
 
-
+// handles selections on a bootstrap dropdown list
+$(".dropdown-menu a ").click(function(){
+    $(this).parents(".dropdown").find('.dropdown-toggle').text($(this).text());
+});
 
 $('.carousel').carousel({
     interval: false,
@@ -946,4 +949,3 @@ $('#search-icon').click(function(){
     // $('#billbo').toggle();
 })
 
-// handles selections on a bootstrap dropdown list
