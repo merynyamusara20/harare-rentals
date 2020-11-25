@@ -2981,6 +2981,10 @@ a.btn1 {
   padding: 0 10px;
 }
 
+.rentals > div > div > div:last-child .card > div > div > div > div {
+  width: 35%;
+}
+
 .rentals > div > div > div:last-child .card > div > div > div > div > h4 {
   font-size: 20px;
   padding-bottom: 10px;
@@ -2988,6 +2992,7 @@ a.btn1 {
 
 .rentals > div > div > div:last-child .card > div > div > div > div > h5 {
   font-size: 20px;
+  text-align: center;
 }
 
 .rentals > div > div > div:last-child .card > div > div > div > h4 {

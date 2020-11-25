@@ -907,8 +907,9 @@ div,.select-selected {
 						p{font-size:13px;}
 				       >div{width:60%;
 							>div {display: flex;justify-content: space-between;padding: 0 10px;
-								>div{
-								>h4{font-size: 20px;padding-bottom: 10px;}>h5{font-size: 20px;}}
+								>div{width:35%;
+								>h4{font-size: 20px;padding-bottom: 10px;}
+								>h5{font-size: 20px;text-align: center;}}
 								>h4{font-size: 30px;}
 								>p{margin: 0 10px 18px 0;line-height: 1.4;}
 								
