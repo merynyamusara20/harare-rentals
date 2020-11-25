@@ -105,6 +105,10 @@ button, a:focus {
   color: #ffff;
 }
 
+#carousel-thumb > div > div {
+  transition: transform 0s ease-in-out,-webkit-transform 0s ease-in-out !important;
+}
+
 .pagination {
   margin: 20px 0 !important;
 }
@@ -204,15 +208,15 @@ nav.navbar #navbar ul li {
   cursor: pointer;
 }
 
-nav.navbar #navbar ul li:nth-of-type(4) {
-  padding: 0 0px;
+nav.navbar #navbar ul li.currency {
+  padding: 0;
 }
 
-nav.navbar #navbar ul li:nth-of-type(4) img {
+nav.navbar #navbar ul li.currency img {
   position: relative;
 }
 
-nav.navbar #navbar ul li:nth-of-type(3) {
+nav.navbar #navbar ul li.list {
   background-color: #ff0000;
   border: none;
   color: white;
@@ -226,7 +230,7 @@ nav.navbar #navbar ul li:nth-of-type(3) {
   padding: .375rem 1rem;
 }
 
-nav.navbar #navbar ul li:nth-of-type(3) a {
+nav.navbar #navbar ul li.list a {
   color: white;
 }
 
@@ -482,6 +486,14 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.heroe .search ul.nav input {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  outline: 0;
+  border: none;
 }
 
 .heroe .search ul.nav li:first-child ::after {
@@ -1807,6 +1819,7 @@ a.btn1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 27%;
 }
 
 .single-listings-page > div:first-child h4 {
@@ -3384,6 +3397,7 @@ a.btn1 {
 
 .featured > div:first-child > h4 {
   font-size: 20px;
+  width: 32%;
 }
 
 .featured > div:first-child .feature {
@@ -3392,6 +3406,7 @@ a.btn1 {
   padding: 10px;
   font-size: 12px;
   z-index: 10;
+  width: auto;
 }
 
 .featured > div:first-child > img {
@@ -3492,6 +3507,7 @@ a.btn1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 10px;
 }
 
 .featured .last > div {
@@ -3627,6 +3643,11 @@ a.button {
 
 .FEATURED > div:first-child h4, .FEATURED > div:first-child h3 {
   color: #212529;
+  width: 32%;
+}
+
+.FEATURED > div:first-child h3.feature {
+  width: auto;
 }
 
 .FEATURED .priority-list {
@@ -3735,6 +3756,8 @@ a.button {
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
+  width: 100px;
+  text-align: center;
 }
 
 .FEATURED .priority-list .last > div:last-child {
@@ -4261,6 +4284,9 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (max-width: 576px) {
+  .single-listings-page > div:first-child {
+    width: 35%;
+  }
   .heroe .search ul.nav li:first-child ::after {
     border-top: .3em solid;
     border-right: .4em solid transparent;
@@ -4305,7 +4331,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
   #nav > div > div.left.d-flex.align-items-center > li.search-icon a img {
     height: 27px !important;
   }
-  #navbar > ul > li:nth-child(3) {
+  #navbar > ul > li.list {
     padding: 0 !important;
   }
   .future {
@@ -4335,6 +4361,8 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .future .price h3, .future .price h4 {
     font-size: 12px;
     font-weight: bold;
+    width: 32%;
+    text-align: center;
   }
   .future #bg-green {
     background-color: #02471a;
@@ -4444,7 +4472,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   .breadcrumb {
     width: 95%;
-    margin: 0 0 8px;
+    margin: 5px 0;
     padding: 10px 0;
   }
   .breadcrumb a {
@@ -4672,9 +4700,6 @@ body > section.heroe > div.search > ul > li.active > div > select {
     font-size: 18px;
     color: #808080;
   }
-  .heroe .search form {
-    margin-bottom: 5px;
-  }
   .heroe .search form input {
     height: 50px;
     font-size: 16px;
@@ -4813,10 +4838,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     margin-bottom: 20px;
   }
-  nav.navbar #navbar ul li:nth-of-type(4) {
-    padding: 0 0px;
-  }
-  nav.navbar #navbar ul li:nth-of-type(4) img {
+  nav.navbar #navbar ul li img {
     position: relative;
   }
   nav.navbar #navbar ul li a img {
@@ -4826,11 +4848,11 @@ body > section.heroe > div.search > ul > li.active > div > select {
     color: white;
     margin-right: 5px;
   }
-  nav.navbar #navbar ul li:nth-of-type(3) {
+  nav.navbar #navbar ul li.list {
     border-bottom: 1px solid #808080;
     height: auto;
   }
-  nav.navbar #navbar ul li:nth-of-type(3) a {
+  nav.navbar #navbar ul li.list a {
     padding-bottom: 10px;
   }
   #nav > div > div.left.d-flex.align-items-center > li > a > img {
@@ -5455,6 +5477,9 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
+  .single-container {
+    padding-top: 0;
+  }
   #billboard, #billbo {
     position: absolute;
     z-index: 99;
@@ -5506,7 +5531,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
   h1 {
     font-size: 19px !important;
   }
-  #navbar > ul > li:nth-child(3) {
+  #navbar > ul > li.list {
     padding: 0 !important;
   }
   .social-cards .card {
@@ -6104,10 +6129,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     margin-bottom: 20px;
   }
-  nav.navbar #navbar ul li:nth-of-type(4) {
-    padding: 0 0px;
-  }
-  nav.navbar #navbar ul li:nth-of-type(4) img {
+  nav.navbar #navbar ul li img {
     position: relative;
   }
   nav.navbar #navbar ul li a img {
@@ -6365,8 +6387,9 @@ body > section.heroe > div.search > ul > li.active > div > select {
     z-index: 99;
     top: 7%;
   }
-  #navbar > ul > li:nth-child(3) {
+  #navbar > ul > li.list {
     padding: 0 !important;
+    border-bottom: 1px solid #808080;
   }
   #navbar > div {
     width: 100%;
@@ -6773,6 +6796,10 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (max-width: 991px) {
+  .tab-pane.active {
+    -webkit-animation: slide-down 0s ease-out;
+            animation: slide-down 0s ease-out;
+  }
   #billbo {
     display: none;
   }
@@ -6817,11 +6844,11 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     margin-bottom: 20px;
   }
-  nav.navbar #navbar ul li:nth-of-type(4) {
-    padding: 0 0px;
-  }
-  nav.navbar #navbar ul li:nth-of-type(4) img {
+  nav.navbar #navbar ul li img {
     position: relative;
+  }
+  nav.navbar #navbar ul li.list {
+    border-bottom: 1px solid #808080;
   }
   nav.navbar #navbar ul li a {
     color: #fff;

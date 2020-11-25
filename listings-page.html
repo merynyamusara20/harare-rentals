@@ -18,46 +18,56 @@
   <!-- header start -->
   <nav class="navbar navbar-expand-lg" id="nav">
     <div class="container">
-   
     <a class="navbar-brand main-img" href="index.html"><img src="images/harare rentals logo.png" alt=""></a>
-
-    
     <div class="left d-flex align-items-center">
-        <li class="search-icon d-flex d-lg-none">
-         <a href="#billboard" id="search-icon"><img src="images/search-icon.png" alt="" style="height:30px;"></a>
-        </li>
-       <li class="nav-item d-flex d-lg-none">
-          <a class="nav-link  position-relative dollar p-0" ><img  src="featured/currency-switcher.png" alt="" style="height:40px;"></a>
-        </li>
-    <button class="navbar-toggler ml-auto border-none p-2" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-    </button>
+      <li class="search-icon d-flex d-lg-none" id="search-icon">
+        <a href="#billboard"><img src="images/search-icon.png" alt=""
+            style="height:30px;"></a>
+      </li>
+      <li class="nav-item d-flex d-lg-none">
+        <a class="nav-link  position-relative dollar p-0"><img src="featured/currency-switcher.png" alt=""
+            style="height:40px;"></a>
+      </li>
+      <button class="navbar-toggler ml-auto border-none p-2" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  
+
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="listings-page.html">Rentals <span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" href="listings-page.html">Houses <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="listings-page.html">Cottages <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="listings-page.html">Townhouses <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="single.html">Property to rent</a>
+          <a class="nav-link " href="#">Commercial</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#" ><span class="fa fa-plus"></span> list Property</a>
+          <a class="nav-link " href="listings-page.html"> All Rentals</a>
         </li>
-        <li class="nav-item d-none d-lg-block">
-          <a class="nav-link  position-relative dollar" ><img  src="featured/currency-switcher.png" alt=""></a>
+        <li class="nav-item list">
+          <a class="nav-link list" href="#"><span class="fa fa-plus"></span>List Property</a>
         </li>
-       
+        <li class="nav-item d-none d-lg-block currency">
+          <a class="nav-link  position-relative dollar"><img src="featured/currency-switcher.png" alt=""></a>
+        </li>
+
         <li class="nav-item">
-           <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#"><span class="d-none d-lg-block"><img class="d-none d-lg-block" src="featured/login-icon.png" alt=""></span>  login</a>
+          <a class="nav-link btn-login" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            href="#"><span class="d-none d-lg-block"><img class="d-none d-lg-block" src="featured/login-icon.png" alt=""></span> login</a>
         </li>
       </ul>
-      
+     
+    </div>
   </div>
-</div>
   </nav>
   <div class="currency-container position-absolute ">
     <div class="currency-menu">
@@ -105,7 +115,7 @@
   <div class="overlay"> </div> 
    <div class="search container">
      <form action="post" class="d-flex">
-     <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button class="d-none d-xs-block">search</button>
+     <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none"><button class="d-none d-xs-block d-md-block">search</button>
    </form>
    <span class="dropdown-wrapper" aria-hidden="true"></span>
    <!-- Example split danger button -->
