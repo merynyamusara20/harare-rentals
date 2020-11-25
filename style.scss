@@ -73,7 +73,7 @@ button,a:focus {
 
 .checkbox input[type=checkbox]:focus + label::before,
 .checkbox input[type=radio]:focus + label::before {
-    outline: none;
+    outline: none;box-shadow:none;
 }
 
 
@@ -90,7 +90,7 @@ button,a:focus {
 	ul li{margin-bottom:5px;
 	a{color: black;text-decoration: none;;}}
 }
-input[type=checkbox], input[type=radio] {margin-right:10px !important;
+input[type=checkbox], input[type=radio] {margin-right:10px !important;box-shadow:none;
 }
 input{border-radius:0% !important;}
 nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-display:flex;-webkit-align-items:center;-webkit-box-shadow:0 3px 5px rgba(57, 63, 72, 0.3);box-shadow:0 3px 5px rgba(57, 63, 72, 0.3);z-index: 999;width:100%;
@@ -1281,7 +1281,8 @@ footer.main-footer{
 	  li a{color: #000000!important;}
   }
 
-	.modal{top:65px;}
+	.modal{top:60px;}
+	.modal-body {padding: 0;}
 	.single-listings-card{background-color: whitesmoke;padding:20px 0 !important;
 		.item{
 			.card{box-shadow:16px 8px 8px #fff;background-color: white;;}}}
