@@ -67,7 +67,7 @@ button,a:focus {
   
   .multiselect{height:fit-content;display:flex;align-items: center;height:100%;position: relative;}
   .multiselect-container.dropdown-menu.custom-multi li:hover{
-	background: #808080;
+	background: #808080;width: 100%;height: 100%;;
 	a,label{color:#ffff;}
 }
 #carousel-thumb > div > div{transition: transform 0s ease-in-out,-webkit-transform 0s ease-in-out !important;}
@@ -645,9 +645,9 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 	}	
 // .container-breadcrumb{padding:50px 0 0 0;}
 .card.agent{border:none;margin-top:0px;padding:0 15px;
-	img{height:150px;object-fit: cover;}
+	img{height:140px;object-fit: cover;}
 	.agent-name{width:fit-content;
-		p{padding-bottom:10px;font-size: 18px;text-align:center;
+		p{padding-bottom:8px;font-size: 18px;text-align:center;
 			b{font-weight:bold;font-size:18px;padding-right:12px;font-family:"Gotham";}
 		}
 		a.submit{color: #fff;background-color:#1C5FE9;;width:100%;text-align: center;padding:8px;height: 40px;font-size: 15px;margin-bottom:10px;text-decoration: none;line-height: 100%;display: flex;align-items: center;justify-content: center;font-size: 16px;border-radius:5px;
@@ -663,13 +663,13 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 				a{background-color: #fff;width: auto;height: auto;;}
 			}
 			.agent-name{
-				>div{padding-bottom:15px;}
+				>div{padding-bottom:10px;}
 				a.submit{margin-right:20px;font-size:14px;padding:0;width:150px;
 				   i{padding-right: 5px;}
 				}
 				p{text-align: center;}
 			}
-			.quote{padding:20px 5px;margin-bottom:10px;
+			.quote{padding:10px 5px;margin-bottom:10px;
 				p{font-size:16px;}
 				em{color: #ff0000;padding:0 3px;}
 			}
@@ -1219,6 +1219,10 @@ nav.single-page{background-color:white;}
 body > section.heroe > div.search > ul > li.active > div > select{border: none;outline: 0;}	
 
 @media (max-width:320px){
+	.card.agent img{height: 75px;}
+	.card.agent #agent .modal-body .agent-name > div {
+		padding-bottom: 0;
+	}
 	section.rentals > div > div > div.col-md-12.col-sm-12.col-lg-8.col-12.order-1 > div > div.last > div.fearture-items > span{
 		&::after{margin-left:4px;}
 	}
@@ -1267,7 +1271,7 @@ footer.main-footer{
 	  li a{color: #000000!important;}
   }
 
-	.modal{top:68px;}
+	.modal{top:65px;}
 	.single-listings-card{background-color: whitesmoke;padding:20px 0 !important;
 		.item{
 			.card{box-shadow:16px 8px 8px #fff;background-color: white;;}}}

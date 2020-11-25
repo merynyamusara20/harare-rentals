@@ -99,6 +99,8 @@ button, a:focus {
 
 .multiselect-container.dropdown-menu.custom-multi li:hover {
   background: #808080;
+  width: 100%;
+  height: 100%;
 }
 
 .multiselect-container.dropdown-menu.custom-multi li:hover a, .multiselect-container.dropdown-menu.custom-multi li:hover label {
@@ -2287,7 +2289,7 @@ a.btn1 {
 }
 
 .card.agent img {
-  height: 150px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2299,7 +2301,7 @@ a.btn1 {
 }
 
 .card.agent .agent-name p {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   font-size: 18px;
   text-align: center;
 }
@@ -2376,7 +2378,7 @@ a.btn1 {
 }
 
 .card.agent #agent .modal-body .agent-name > div {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .card.agent #agent .modal-body .agent-name a.submit {
@@ -2395,7 +2397,7 @@ a.btn1 {
 }
 
 .card.agent #agent .modal-body .quote {
-  padding: 20px 5px;
+  padding: 10px 5px;
   margin-bottom: 10px;
 }
 
@@ -4247,6 +4249,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (max-width: 320px) {
+  .card.agent img {
+    height: 75px;
+  }
+  .card.agent #agent .modal-body .agent-name > div {
+    padding-bottom: 0;
+  }
   section.rentals > div > div > div.col-md-12.col-sm-12.col-lg-8.col-12.order-1 > div > div.last > div.fearture-items > span::after {
     margin-left: 4px;
   }
@@ -4317,7 +4325,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     color: #000000 !important;
   }
   .modal {
-    top: 68px;
+    top: 65px;
   }
   .single-listings-card {
     background-color: whitesmoke;
