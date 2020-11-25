@@ -22,7 +22,8 @@ $(".btnn").click(function() {
 });
 
 // handles selections on a bootstrap dropdown list
-$(".dropdown-menu a ").click(function(){
+$(".dropdown-menu a ").click(function(e){
+    e.preventDefault();
     $(this).parents(".dropdown").find('.dropdown-toggle').text($(this).text());
 });
 
