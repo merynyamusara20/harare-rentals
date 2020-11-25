@@ -107,6 +107,11 @@ button, a:focus {
   color: #ffff;
 }
 
+.checkbox input[type=checkbox]:focus + label::before,
+.checkbox input[type=radio]:focus + label::before {
+  outline: none;
+}
+
 #carousel-thumb > div > div {
   transition: transform 0s ease-in-out,-webkit-transform 0s ease-in-out !important;
 }
@@ -488,14 +493,6 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.heroe .search ul.nav input {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  outline: 0;
-  border: none;
 }
 
 .heroe .search ul.nav li:first-child ::after {
@@ -4071,7 +4068,7 @@ body > section.heroe > div.search > ul > li.active > div > div {
 }
 
 .listings-hero .search form {
-  width: 50%;
+  width: 38%;
 }
 
 .listings-hero .search form > input {
@@ -4089,7 +4086,7 @@ body > section.heroe > div.search > ul > li.active > div > div {
 }
 
 .listings-hero .search > ul {
-  width: 48%;
+  width: 60%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -4117,6 +4114,24 @@ body > section.heroe > div.search > ul > li.active > div > div {
 .listings-hero .search > ul > li > div > a .dropdown-item {
   color: #000000;
   padding: 0px 20px;
+}
+
+.listings-hero .search > ul > li > button {
+  height: 35px;
+  outline: 0;
+  background-color: #808080;
+  width: 90px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
 }
 
 .listings-hero .search > ul ul li {
@@ -6612,7 +6627,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     padding: 5px;
   }
   .listings-hero .search form {
-    width: 50%;
+    width: 40%;
   }
   .listings-hero .search form > input {
     font-size: 12px;
@@ -6627,6 +6642,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 55%;
   }
   .listings-hero .search > ul > li {
     padding-right: 9px;
@@ -6640,6 +6656,11 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .listings-hero .search > ul > li > div > a .dropdown-item {
     color: #000000;
     padding: 0px 20px;
+  }
+  .listings-hero .search > ul > li > button {
+    width: 60px;
+    height: 28px;
+    font-size: 9px;
   }
   .rentals > div > div > div:nth-child(2) > div img {
     width: 100%;
@@ -6765,7 +6786,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     top: 0 !important;
   }
   .listings-hero .search form {
-    width: 40%;
+    width: 38%;
   }
   .listings-hero .search > ul {
     display: -webkit-box;
@@ -6774,10 +6795,19 @@ body > section.heroe > div.search > ul > li.active > div > select {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 58%;
+    width: 60%;
   }
   .listings-hero .search > ul > li > div > a {
     font-size: 14px;
+  }
+  .listings-hero .search > ul > li:last-of-type {
+    padding-right: 0;
+  }
+  .listings-hero .search > ul > li:last-of-type > button {
+    width: 70px;
+  }
+  nav.navbar #navbar ul li a {
+    font-size: 12px;
   }
 }
 
@@ -6817,7 +6847,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     display: none;
   }
   nav.navbar {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   nav.navbar .navbar-toggler {
     width: 50px;

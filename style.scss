@@ -70,6 +70,14 @@ button,a:focus {
 	background: #808080;width: 100%;height: 100%;;
 	a,label{color:#ffff;}
 }
+
+.checkbox input[type=checkbox]:focus + label::before,
+.checkbox input[type=radio]:focus + label::before {
+    outline: none;
+}
+
+
+
 #carousel-thumb > div > div{transition: transform 0s ease-in-out,-webkit-transform 0s ease-in-out !important;}
  // .main-image >img{width: 100px;height: 50px;object-fit: contain;}
 .pagination{margin: 20px 0!important;}
@@ -162,7 +170,7 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 			button{height:2rem;border: none;font-size: 16px;text-transform:capitalize;color:white;background-color:#808080;;outline:0;display: flex;justify-content: center;align-items: center;}
 		}
 		ul.nav{padding:8px 0 ;display: flex;align-items: center;
-			input{box-shadow: none;outline: none;outline:0;border:none;}
+		
 			li:first-child{
 				::after{border-top: .3em solid;border-right: .4em solid transparent;border-left: .4em solid transparent;position: absolute;
 					right: -16px;
@@ -1149,17 +1157,18 @@ body > section.heroe > div.search > ul > li.active > div > div{display: flex;ver
 .listings-hero{height:145px;background: none;width: 100%;background-color: white; ;
 	.overlay{background: none;}
 	.search{height: 100px;width: 100%;top:0;background-color: whitesmoke;flex-direction: row;align-items: center;justify-content: space-between;padding:5px 18px;
-		form{width: 50%;
+		form{width: 38%;
 			>input{height: 35px;width: 100%;outline:0;background-position:10px center;padding-left: 38px;}
 			button{height: 40px;outline:0;background-color: #808080;}
 		}
-		>ul{width: 48%;justify-content:space-between;
+		>ul{width: 60%;justify-content:space-between;
 			 >li{padding-right:14px;
 			  >div >a{font-size:14px;color: black;text-decoration: none;min-width:auto;
 				    input{margin-right:10px;}
 			      .dropdown-menu{min-width:auto;}
 				  .dropdown-item{color: #000000;padding:0px 20px;}
-			    }
+				}
+				>button{height: 35px;outline:0;background-color: #808080;width: 90px;border:none;display: flex;align-items: center;justify-content: center;color: #fff;}
 			}
 			ul{
 				li {font-size:.9rem;height: 26px;display:flex;align-items:center;
@@ -2188,16 +2197,17 @@ footer.main-footer{
 	
 	.search{height:80px;padding: 5px;
 
-		form{width: 50%;
+		form{width: 40%;
 			>input{font-size:12px;}
 			button{height: 40px;}
 		}
-		>ul{display: flex;align-items: center;;
+		>ul{display: flex;align-items: center;width:55%;
 			>li{padding-right:9px;
 			>div >a{font-size:9px;
 			      .dropdown-menu{min-width:auto;}
 				  .dropdown-item{color: #000000;padding:0px 20px;}
 			}
+			>button{width: 60px;height: 28px;font-size: 9px;}
 		}
 		}
 	}
@@ -2284,16 +2294,22 @@ a.button{font-size:10px;}
 }
 .listings-hero{height:145px;
 	.search{top: 0!important;
-		form{width:40%;	
+		form{width:38%;	
 		}
-		>ul{display: flex;align-items: center;width:58%;;
+		>ul{display: flex;align-items: center;width:60%;;
 			 >li{
 			>div >a{font-size:14px;
 			     
-			}}
+			}
+			&:last-of-type {padding-right: 0;;
+				>button{width: 70px;}
+
+			}
+		}
 		}
 	}
   }
+  nav.navbar #navbar ul li a {font-size: 12px;}
 }
 
 @media (min-width:991px){
@@ -2323,7 +2339,7 @@ a.button{font-size:10px;}
 	
   //navbar styling
   #billbo{display:none;}
-nav.navbar{padding:0 15px;
+  nav.navbar{padding:0 20px;
 	.navbar-toggler{width:50px;
 		span{height:14%;width:75%;background-color:#ff0000;
 			&:nth-of-type(2){margin:5px 0;}
