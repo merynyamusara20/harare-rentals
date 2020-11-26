@@ -489,6 +489,11 @@ nav.navbar #navbar ul li a .login {
           align-items: center;
 }
 
+.heroe .search label {
+  width: 100%;
+  height: 100%;
+}
+
 .heroe .search ul.nav {
   padding: 8px 0;
   display: -webkit-box;
@@ -4089,6 +4094,11 @@ body > section.heroe > div.search > ul > li.active > div > div {
   background-color: #808080;
 }
 
+.listings-hero .search label {
+  width: 100%;
+  height: 100%;
+}
+
 .listings-hero .search > ul {
   width: 60%;
   -webkit-box-pack: justify;
@@ -5299,6 +5309,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
             flex-direction: row;
     width: 100%;
     padding-bottom: 0;
+    margin-left: 0;
   }
   .featured .last > div {
     padding: 10px;
@@ -6411,6 +6422,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .FEATURED .priority-list .last .prio-icons > a {
+    width: 80px;
+  }
+  .featured .last {
+    margin-left: 0;
+  }
   #billbo > div.search.container > ul > li:nth-child(1) > div > div > button {
     font-size: 9px;
   }
@@ -6726,6 +6743,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .FEATURED .priority-list .last .prio-icons > a {
+    width: 80px;
+  }
+  .featured .last {
+    margin-left: 0;
+  }
   .collapse:not(.show) {
     display: block;
   }
