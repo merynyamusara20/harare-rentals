@@ -430,13 +430,15 @@ nav.navbar #navbar ul li a .login {
   text-transform: capitalize;
 }
 
-.heroe .search form {
+.heroe .search form.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.heroe .search form input {
+.heroe .search form.form input.top-inpt {
   width: 90%;
   height: 2rem;
   padding: 10px;
@@ -451,31 +453,31 @@ nav.navbar #navbar ul li a .login {
   border-radius: 0;
 }
 
-.heroe .search form input > ::-webkit-input-placeholder {
+.heroe .search form.form input.top-inpt > ::-webkit-input-placeholder {
   padding-left: 100px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.heroe .search form input > :-ms-input-placeholder {
+.heroe .search form.form input.top-inpt > :-ms-input-placeholder {
   padding-left: 100px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.heroe .search form input > ::-ms-input-placeholder {
+.heroe .search form.form input.top-inpt > ::-ms-input-placeholder {
   padding-left: 100px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.heroe .search form input > ::placeholder {
+.heroe .search form.form input.top-inpt > ::placeholder {
   padding-left: 100px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.heroe .search form button {
+.heroe .search form.form button.top-btn {
   height: 2rem;
   border: none;
   font-size: 16px;
@@ -507,6 +509,30 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+.heroe .search ul.nav .dropdown {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.heroe .search ul.nav .dropdown .btn-group {
+  border: none;
+  background-color: transparent;
+}
+
+.heroe .search ul.nav .dropdown .btn-group button {
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.heroe .search ul.nav .dropdown .btn-group button:hover, .heroe .search ul.nav .dropdown .btn-group button:focus {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
 }
 
 .heroe .search ul.nav li:first-child ::after {
@@ -514,7 +540,7 @@ nav.navbar #navbar ul li a .login {
   border-right: .4em solid transparent;
   border-left: .4em solid transparent;
   position: absolute;
-  right: -16px;
+  right: -5px;
   top: 44%;
 }
 
@@ -3870,7 +3896,7 @@ body > section.heroe > div.search > ul > li > div > div {
   display: flex;
 }
 
-.hero .search form input {
+.hero .search form input.top-inpt {
   width: 90%;
   height: 35px;
   padding: 20px;
@@ -3884,31 +3910,31 @@ body > section.heroe > div.search > ul > li > div > div {
   font-size: 15px;
 }
 
-.hero .search form input > ::-webkit-input-placeholder {
+.hero .search form input.top-inpt > ::-webkit-input-placeholder {
   padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.hero .search form input > :-ms-input-placeholder {
+.hero .search form input.top-inpt > :-ms-input-placeholder {
   padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.hero .search form input > ::-ms-input-placeholder {
+.hero .search form input.top-inpt > ::-ms-input-placeholder {
   padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.hero .search form input > ::placeholder {
+.hero .search form input.top-inpt > ::placeholder {
   padding-left: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.hero .search form button {
+.hero .search form button.top-btn {
   height: 40px;
   border: none;
   padding: 10px;
@@ -4082,60 +4108,73 @@ body > section.heroe > div.search > ul > li.active > div > div {
 }
 
 .listings-hero .search form {
-  width: 38%;
-}
-
-.listings-hero .search form > input {
-  height: 35px;
   width: 100%;
-  outline: 0;
-  background-position: 10px center;
-  padding-left: 38px;
-}
-
-.listings-hero .search form button {
-  height: 40px;
-  outline: 0;
-  background-color: #808080;
-}
-
-.listings-hero .search label {
-  width: 100%;
-  height: 100%;
-}
-
-.listings-hero .search > ul {
-  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.listings-hero .search > ul > li {
+.listings-hero .search form > input.top-inpt {
+  height: 35px;
+  width: 35%;
+  outline: 0;
+  background-position: 10px center;
+  padding-left: 38px;
+}
+
+.listings-hero .search form button.top-btn {
+  height: 40px;
+  outline: 0;
+  background-color: #808080;
+}
+
+.listings-hero .search form label {
+  width: 100%;
+  height: 100%;
+}
+
+.listings-hero .search form > ul {
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listings-hero .search form > ul > li {
   padding-right: 14px;
 }
 
-.listings-hero .search > ul > li > div > a {
+.listings-hero .search form > ul > li .dropdown .btn-group button {
+  font-size: 14px;
+}
+
+.listings-hero .search form > ul > li > div > a {
   font-size: 14px;
   color: black;
   text-decoration: none;
   min-width: auto;
 }
 
-.listings-hero .search > ul > li > div > a input {
+.listings-hero .search form > ul > li > div > a input {
   margin-right: 10px;
 }
 
-.listings-hero .search > ul > li > div > a .dropdown-menu {
+.listings-hero .search form > ul > li > div > a .dropdown-menu {
   min-width: auto;
 }
 
-.listings-hero .search > ul > li > div > a .dropdown-item {
+.listings-hero .search form > ul > li > div > a .dropdown-item {
   color: #000000;
   padding: 0px 20px;
 }
 
-.listings-hero .search > ul > li > button {
+.listings-hero .search form > ul > li > button {
   height: 35px;
   outline: 0;
   background-color: #808080;
@@ -4153,7 +4192,7 @@ body > section.heroe > div.search > ul > li.active > div > div {
   color: #fff;
 }
 
-.listings-hero .search > ul ul li {
+.listings-hero .search form > ul ul li {
   font-size: .9rem;
   height: 26px;
   display: -webkit-box;
@@ -4164,8 +4203,13 @@ body > section.heroe > div.search > ul > li.active > div > div {
           align-items: center;
 }
 
-.listings-hero .search > ul ul li a {
+.listings-hero .search form > ul ul li a {
   width: 100%;
+}
+
+body > section.heroe > div.search > form > ul > li:nth-child(1) > div > div > button {
+  background-color: transparent;
+  color: #fff;
 }
 
 nav.single-page {
@@ -4632,26 +4676,47 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .listings-hero .search form {
     width: 100%;
     margin-bottom: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .listings-hero .search form > input {
+  .listings-hero .search form > input.top-inpt {
     font-size: 12px;
     height: 50px;
     font-size: 14px;
+    width: 100%;
+    margin-bottom: 5px;
   }
-  .listings-hero .search form button {
+  .listings-hero .search form button.top-btn {
     height: 50px;
   }
-  .listings-hero .search ul {
+  .listings-hero .search form ul {
     padding: 2px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
   }
-  .listings-hero .search ul .dropdown {
+  .listings-hero .search form ul .dropdown {
     width: 100%;
   }
-  .listings-hero .search ul li {
+  .listings-hero .search form ul .dropdown .btn-group {
+    width: 100%;
+  }
+  .listings-hero .search form ul .dropdown .btn-group button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    color: #000;
+    font-size: 14px;
+    padding: 0;
+  }
+  .listings-hero .search form ul li {
     padding: 5px 12px;
     background-color: #fff;
     margin-bottom: 6px;
@@ -4665,16 +4730,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     text-align: left;
   }
-  .listings-hero .search ul li:nth-of-type(1) {
+  .listings-hero .search form ul li:nth-of-type(1) {
     width: 100%;
   }
-  .listings-hero .search ul li:nth-of-type(2), .listings-hero .search ul li:nth-of-type(3) {
+  .listings-hero .search form ul li:nth-of-type(2), .listings-hero .search form ul li:nth-of-type(3) {
     width: 32%;
   }
-  .listings-hero .search ul li:nth-of-type(5), .listings-hero .search ul li:nth-of-type(6), .listings-hero .search ul li:nth-of-type(4) {
+  .listings-hero .search form ul li:nth-of-type(5), .listings-hero .search form ul li:nth-of-type(6), .listings-hero .search form ul li:nth-of-type(4) {
     width: 32%;
   }
-  .listings-hero .search ul li a {
+  .listings-hero .search form ul li a {
     color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4688,12 +4753,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search ul .search-button {
+  .listings-hero .search form ul .search-button {
     width: 32%;
     text-align: center;
     background: #808080;
   }
-  .listings-hero .search ul .search-button button {
+  .listings-hero .search form ul .search-button button {
     border: none;
     background: #808080;
     display: -webkit-box;
@@ -4711,10 +4776,10 @@ body > section.heroe > div.search > ul > li.active > div > select {
     text-transform: capitalize;
     color: #fff;
   }
-  .listings-hero .search ul ul {
+  .listings-hero .search form ul ul {
     overflow: hidden !important;
   }
-  .listings-hero .search ul ul li {
+  .listings-hero .search form ul ul li {
     width: 100% !important;
     height: 22px;
     border: none;
@@ -4750,12 +4815,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
     font-size: 18px;
     color: #808080;
   }
-  .heroe .search form input {
+  .heroe .search form.form input.top-inpt {
     height: 50px;
     font-size: 16px;
     width: 100%;
   }
-  .heroe .search form button {
+  .heroe .search form.form button {
     height: 50px;
   }
   .heroe .search ul {
@@ -4767,6 +4832,13 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .heroe .search ul .dropdown {
     width: 100%;
     text-align: center;
+  }
+  .heroe .search ul .dropdown .btn-group {
+    width: 100% !important;
+  }
+  .heroe .search ul .dropdown .btn-group button {
+    font-size: 14px !important;
+    padding: 0;
   }
   .heroe .search ul li {
     padding: 5px 7px;
@@ -4838,6 +4910,17 @@ body > section.heroe > div.search > ul > li.active > div > select {
     height: 21px;
     border: none;
     outline: 0;
+  }
+  body > section.heroe > div.search > form > ul > li:nth-child(1) > div > div > button {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: transparent;
+    color: #000;
   }
   nav.navbar {
     padding: 0 15px;
@@ -5710,24 +5793,30 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .listings-hero .search form {
     width: 100%;
     margin-bottom: 6px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .listings-hero .search form > input {
+  .listings-hero .search form > input.top-inpt {
     font-size: 12px;
     height: 50px;
     font-size: 14px;
     border: none;
+    width: 100%;
+    margin-bottom: 6px;
   }
-  .listings-hero .search form button {
+  .listings-hero .search form button.top-btn {
     height: 50px;
     display: none;
   }
-  .listings-hero .search > ul {
+  .listings-hero .search form > ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
   }
-  .listings-hero .search > ul .dropdown {
+  .listings-hero .search form > ul .dropdown {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5739,7 +5828,19 @@ body > section.heroe > div.search > ul > li.active > div > select {
         -ms-flex-align: center;
             align-items: center;
   }
-  .listings-hero .search > ul > li {
+  .listings-hero .search form > ul .dropdown .btn-group {
+    width: 100%;
+  }
+  .listings-hero .search form > ul .dropdown .btn-group button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+  .listings-hero .search form > ul > li {
     padding: 15px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -5755,16 +5856,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
     display: flex;
     justify-content: space-between;
   }
-  .listings-hero .search > ul > li:nth-of-type(1) {
+  .listings-hero .search form > ul > li:nth-of-type(1) {
     width: 100%;
   }
-  .listings-hero .search > ul > li:nth-of-type(2), .listings-hero .search > ul > li:nth-of-type(3) {
+  .listings-hero .search form > ul > li:nth-of-type(2), .listings-hero .search form > ul > li:nth-of-type(3) {
     width: 48%;
   }
-  .listings-hero .search > ul > li:nth-of-type(4), .listings-hero .search > ul > li:nth-of-type(5), .listings-hero .search > ul > li:nth-of-type(6) {
+  .listings-hero .search form > ul > li:nth-of-type(4), .listings-hero .search form > ul > li:nth-of-type(5), .listings-hero .search form > ul > li:nth-of-type(6) {
     width: 32%;
   }
-  .listings-hero .search > ul > li > div > a {
+  .listings-hero .search form > ul > li > div > a {
     font-size: 16px;
     color: black;
     width: 100%;
@@ -5775,10 +5876,10 @@ body > section.heroe > div.search > ul > li.active > div > select {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-menu {
+  .listings-hero .search form > ul > li > div > a .dropdown-menu {
     min-width: auto;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-item {
+  .listings-hero .search form > ul > li > div > a .dropdown-item {
     color: #000000;
     padding: 0px 20px;
     width: 100%;
@@ -5786,16 +5887,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
         -ms-flex-align: center;
             align-items: center;
   }
-  .listings-hero .search > ul ul {
+  .listings-hero .search form > ul ul {
     overflow: hidden !important;
   }
-  .listings-hero .search > ul ul li {
+  .listings-hero .search form > ul ul li {
     width: 100% !important;
     height: 20px;
     border: none;
     outline: 0;
   }
-  .listings-hero .search > ul ul li a {
+  .listings-hero .search form > ul ul li a {
     padding: 7px 0 !important;
   }
   .heroe {
@@ -5811,29 +5912,46 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .heroe .search h1 {
     font-size: 18px;
   }
-  .heroe .search form {
+  .heroe .search form.form {
     margin-bottom: 5px;
   }
-  .heroe .search form input {
+  .heroe .search form.form input.top-inpt {
     height: 50px;
     font-size: 16px;
     width: 100%;
+    margin-bottom: 6px;
   }
-  .heroe .search form button {
+  .heroe .search form.form button.top-inpt {
     height: 50px;
     display: none !important;
   }
-  .heroe .search ul {
+  .heroe .search form.form ul {
     padding: 2px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
   }
-  .heroe .search ul .dropdown {
+  .heroe .search form.form ul .dropdown {
     width: 100%;
   }
-  .heroe .search ul li {
+  .heroe .search form.form ul .dropdown .btn-group {
+    width: 100%;
+  }
+  .heroe .search form.form ul .dropdown .btn-group button {
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100% !important;
+  }
+  .heroe .search form.form ul .dropdown .btn-group button:after {
+    position: initial;
+  }
+  .heroe .search form.form ul li {
     padding: 5px;
     background-color: #fff;
     margin-bottom: 6px;
@@ -5847,16 +5965,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     text-align: left;
   }
-  .heroe .search ul li:nth-of-type(1) {
+  .heroe .search form.form ul li:nth-of-type(1) {
     width: 100%;
   }
-  .heroe .search ul li:nth-of-type(2), .heroe .search ul li:nth-of-type(3) {
+  .heroe .search form.form ul li:nth-of-type(2), .heroe .search form.form ul li:nth-of-type(3) {
     width: 32%;
   }
-  .heroe .search ul li:nth-of-type(5), .heroe .search ul li:nth-of-type(6), .heroe .search ul li:nth-of-type(4) {
+  .heroe .search form.form ul li:nth-of-type(5), .heroe .search form.form ul li:nth-of-type(6), .heroe .search form.form ul li:nth-of-type(4) {
     width: 32%;
   }
-  .heroe .search ul li a {
+  .heroe .search form.form ul li a {
     color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5866,13 +5984,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
             align-items: center;
     width: 100%;
     font-size: 14px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .heroe .search ul .search-button {
+  .heroe .search form.form ul .search-button {
     width: 32%;
     text-align: center;
     background: #808080;
   }
-  .heroe .search ul .search-button button {
+  .heroe .search form.form ul .search-button button {
     border: none;
     background: #808080;
     display: -webkit-box;
@@ -5890,16 +6011,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
     text-transform: capitalize;
     color: #fff;
   }
-  .heroe .search ul ul {
+  .heroe .search form.form ul ul {
     overflow: hidden !important;
   }
-  .heroe .search ul ul li {
+  .heroe .search form.form ul ul li {
     width: 100% !important;
     height: 20px;
     border: none;
     outline: 0;
   }
-  .heroe .search ul ul li a {
+  .heroe .search form.form ul ul li a {
     padding: 7px 0 !important;
   }
   body section.heroe > div.search > ul > li > div > div {
@@ -6305,23 +6426,24 @@ body > section.heroe > div.search > ul > li.active > div > select {
   .listings-hero .search form {
     width: 100%;
   }
-  .listings-hero .search form > input {
+  .listings-hero .search form > input.top-inpt {
     font-size: 12px;
+    width: 100%;
   }
-  .listings-hero .search form button {
+  .listings-hero .search form button.top-btn {
     display: none;
   }
-  .listings-hero .search ul {
+  .listings-hero .search form ul {
     padding: 2px 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .listings-hero .search ul .dropdown {
+  .listings-hero .search form ul .dropdown {
     width: 100%;
     text-align: center;
   }
-  .listings-hero .search ul li {
+  .listings-hero .search form ul li {
     padding: 5px;
     background-color: #fff;
     margin-bottom: 6px;
@@ -6335,16 +6457,16 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     text-align: left;
   }
-  .listings-hero .search ul li:nth-of-type(1) {
+  .listings-hero .search form ul li:nth-of-type(1) {
     width: 100%;
   }
-  .listings-hero .search ul li:nth-of-type(2), .listings-hero .search ul li:nth-of-type(3) {
+  .listings-hero .search form ul li:nth-of-type(2), .listings-hero .search form ul li:nth-of-type(3) {
     width: 32%;
   }
-  .listings-hero .search ul li:nth-of-type(5), .listings-hero .search ul li:nth-of-type(6), .listings-hero .search ul li:nth-of-type(4) {
+  .listings-hero .search form ul li:nth-of-type(5), .listings-hero .search form ul li:nth-of-type(6), .listings-hero .search form ul li:nth-of-type(4) {
     width: 32%;
   }
-  .listings-hero .search ul li a {
+  .listings-hero .search form ul li a {
     color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6355,12 +6477,12 @@ body > section.heroe > div.search > ul > li.active > div > select {
     width: 100%;
     font-size: 14px;
   }
-  .listings-hero .search ul .search-button {
+  .listings-hero .search form ul .search-button {
     width: 32%;
     text-align: center;
     background: #808080;
   }
-  .listings-hero .search ul .search-button button {
+  .listings-hero .search form ul .search-button button {
     border: none;
     background: #808080;
     display: -webkit-box;
@@ -6650,43 +6772,48 @@ body > section.heroe > div.search > ul > li.active > div > select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 130px;
   }
   .listings-hero .search {
     height: 80px;
     padding: 5px;
   }
   .listings-hero .search form {
+    width: 100%;
+  }
+  .listings-hero .search form > input.top-inpt {
+    font-size: 12px;
     width: 40%;
   }
-  .listings-hero .search form > input {
-    font-size: 12px;
-  }
-  .listings-hero .search form button {
+  .listings-hero .search form button.top-btn {
     height: 40px;
   }
-  .listings-hero .search > ul {
+  .listings-hero .search form > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 55%;
+    width: 58%;
   }
-  .listings-hero .search > ul > li {
+  .listings-hero .search form > ul > li {
     padding-right: 9px;
   }
-  .listings-hero .search > ul > li > div > a {
+  .listings-hero .search form > ul > li .dropdown .btn-group button {
     font-size: 9px;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-menu {
+  .listings-hero .search form > ul > li > div > a {
+    font-size: 9px;
+  }
+  .listings-hero .search form > ul > li > div > a .dropdown-menu {
     min-width: auto;
   }
-  .listings-hero .search > ul > li > div > a .dropdown-item {
+  .listings-hero .search form > ul > li > div > a .dropdown-item {
     color: #000000;
     padding: 0px 20px;
   }
-  .listings-hero .search > ul > li > button {
+  .listings-hero .search form > ul > li > button {
     width: 60px;
     height: 28px;
     font-size: 9px;
@@ -6732,9 +6859,6 @@ body > section.heroe > div.search > ul > li.active > div > select {
   a.fixed-icon {
     left: 90%;
     top: 87%;
-  }
-  .listings-hero {
-    height: 10vh;
   }
   body > section.popular-areas > div > h1 {
     -webkit-box-pack: justify;
@@ -6821,24 +6945,27 @@ body > section.heroe > div.search > ul > li.active > div > select {
     top: 0 !important;
   }
   .listings-hero .search form {
-    width: 38%;
+    width: 100%;
   }
-  .listings-hero .search > ul {
+  .listings-hero .search form input.top-inpt {
+    width: 32%;
+  }
+  .listings-hero .search form > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 60%;
+    width: 65%;
   }
-  .listings-hero .search > ul > li > div > a {
+  .listings-hero .search form > ul > li > div > a {
     font-size: 14px;
   }
-  .listings-hero .search > ul > li:last-of-type {
+  .listings-hero .search form > ul > li:last-of-type {
     padding-right: 0;
   }
-  .listings-hero .search > ul > li:last-of-type > button {
+  .listings-hero .search form > ul > li:last-of-type > button {
     width: 70px;
   }
   nav.navbar #navbar ul li a {
@@ -6856,20 +6983,24 @@ body > section.heroe > div.search > ul > li.active > div > select {
   #billbo > div.search.container > ul > li:nth-child(1) > div > div > button::after {
     margin-bottom: 2px;
   }
-  .listings-hero .search {
+  .listings-hero .search, .hero .search {
     top: 23px !important;
     margin: auto !important;
   }
-  .listings-hero .search > ul {
+  .listings-hero .search > ul, .hero .search > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0px;
   }
-  .listings-hero .search > ul > li > div > a {
+  .listings-hero .search > ul > li > div > a, .hero .search > ul > li > div > a {
     font-size: 14px;
+  }
+  .heroe .search ul.nav {
+    padding: 0;
   }
 }
 
