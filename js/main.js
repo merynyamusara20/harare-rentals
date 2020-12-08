@@ -855,8 +855,8 @@ $(document).ready(function(){
 }(window.jQuery);
 
 
-$(".dropdown").on("click", ".dropdown-toggle", function(e) { 
-    // e.preventDefault();
+$(".dropdown").on("click", ".form li .dropdown-toggle", function(e) { 
+    e.preventDefault();
     $(this).parent().addClass("show");
     $(this).attr("aria-expanded", "true");
     $(this).next().addClass("show"); 

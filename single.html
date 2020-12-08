@@ -111,118 +111,115 @@
 
   <section class="hero listings-hero" id="billboard">
     <div class="overlay"> </div>
-    <div class="search container" style="margin:0px auto!important;">
+    <div class="search container">
       <form action="post" class="d-flex">
-        <input type="text" placeholder="Search For a Rental in Harare" role="combobox"
-          autocomplete="none">
-          <button class="d-none d-xs-block">search</button>
-      </form>
-      <span class="dropdown-wrapper" aria-hidden="true"></span>
-      <!-- Example split danger button -->
-      <ul class="nav" style="z-index: 999;">
-        <li>
-          <div class="dropdown">
-            <select type="text" class="multiselect" multiple="multiple" role="multiselect">          
-             <option value="0" selected="selected">Property Type</option>
-             <option value="1">Apartment/Flat</option>
-             <option value="2">Commercial</option>
-             <option value="3">Cottage</option>
-             <option value="4">Development</option>
-             <option value="5">Farm/Smallholding</option>
-             <option value="6">Hospitality</option>
-             <option value="7">House</option>
-           </select>  
+      <input  type="text" placeholder="Search For a Rental in Harare" role="combobox" autocomplete="none" class="top-inpt" required>
+      <button class="d-none d-xs-block top-btn" type="submit">search</button>
+    
+    <span class="dropdown-wrapper" aria-hidden="true"></span>
+    <!-- Example split danger button -->
+   <ul class="nav" style="z-index: 999;"> 
+     <li>
+       <div class="dropdown" required>
+         <select type="text" class="multiselect" multiple="multiple" role="multiselect">          
+          <option value="1">Apartment/Flat</option>
+          <option value="2">Commercial</option>
+          <option value="3">Cottage</option>
+          <option value="4">Development</option>
+          <option value="5">Farm/Smallholding</option>
+          <option value="6">Hospitality</option>
+          <option value="7">House</option>
+        </select>  
+      </div>
+     </li>
+ 
+ 
+ 
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Min Price
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">$15,000</a>
+           <a class="dropdown-item" href="#">$25,000</a>
+           <a class="dropdown-item" href="#">$50,000</a>
+           <a class="dropdown-item" href="#">$75,000</a>
+           <a class="dropdown-item" href="#">$100,000</a>
          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Min Price
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">$15,000</a>
-              <a class="dropdown-item" href="#">$25,000</a>
-              <a class="dropdown-item" href="#">$50,000</a>
-              <a class="dropdown-item" href="#">$75,000</a>
-              <a class="dropdown-item" href="#">$100,000</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Max Price
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">$15,000</a>
-              <a class="dropdown-item" href="#">$25,000</a>
-              <a class="dropdown-item" href="#">$50,000</a>
-              <a class="dropdown-item" href="#">$75,000</a>
-              <a class="dropdown-item" href="#">$100,000</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Beds
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">1+</a>
-              <a class="dropdown-item" href="#">2+</a>
-              <a class="dropdown-item" href="#">3+</a>
-              <a class="dropdown-item" href="#">4+</a>
-              <a class="dropdown-item" href="#">5+</a>
-              <a class="dropdown-item" href="#">6+</a>
-
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Baths
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">1+</a>
-              <a class="dropdown-item" href="#">2+</a>
-              <a class="dropdown-item" href="#">3+</a>
-              <a class="dropdown-item" href="#">4+</a>
-              <a class="dropdown-item" href="#">5+</a>
-              <a class="dropdown-item" href="#">6+</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Area
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">1ac+</a>
-              <a class="dropdown-item" href="#">1.5ac+</a>
-              <a class="dropdown-item" href="#">2ac+</a>
-              <a class="dropdown-item" href="#">2.5ac+</a>
-              <a class="dropdown-item" href="#">3ac+</a>
-              <a class="dropdown-item" href="#">3.5ac+</a>
-            </div>
-          </div>
-        </li>
-        <li class="search-button d-block d-md-none">
-          <button >search</button>
-        </li>
-      </ul>
-    </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Max Price
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">$15,000</a>
+           <a class="dropdown-item" href="#">$25,000</a>
+           <a class="dropdown-item" href="#">$50,000</a>
+           <a class="dropdown-item" href="#">$75,000</a>
+           <a class="dropdown-item" href="#">$100,000</a>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Beds
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">1+</a>
+           <a class="dropdown-item" href="#">2+</a>
+           <a class="dropdown-item" href="#">3+</a>
+           <a class="dropdown-item" href="#">4+</a>
+           <a class="dropdown-item" href="#">5+</a>
+           <a class="dropdown-item" href="#">6+</a>
+ 
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Baths
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">1+</a>
+           <a class="dropdown-item" href="#">2+</a>
+           <a class="dropdown-item" href="#">3+</a>
+           <a class="dropdown-item" href="#">4+</a>
+           <a class="dropdown-item" href="#">5+</a>
+           <a class="dropdown-item" href="#">6+</a>
+         </div>
+       </div>
+     </li>
+    <li class="d-flex d-md-none">
+       <div class="dropdown">
+         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Area
+         </a>
+       
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <a class="dropdown-item" href="#">1ac+</a>
+           <a class="dropdown-item" href="#">1.5ac+</a>
+           <a class="dropdown-item" href="#">2ac+</a>
+           <a class="dropdown-item" href="#">2.5ac+</a>
+           <a class="dropdown-item" href="#">3ac+</a>
+           <a class="dropdown-item" href="#">3.5ac+</a>
+         </div>
+       </div>
+     </li>
+     <li class="search-button ">
+       <button class="" type="submit">Search</button>
+     </li>
+   </ul>
+   </form>
+ </div>
   </section>
   <!-- start breadcrumb -->
   <div class=" container p-lg-0 single-container ">

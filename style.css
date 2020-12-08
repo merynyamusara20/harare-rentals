@@ -525,7 +525,9 @@ nav.navbar #navbar ul li a .login {
 
 .heroe .search ul.nav .dropdown .btn-group button {
   font-size: 14px;
-  background-color: transparent;
+  background-color: transparent !important;
+  padding-left: 0;
+  border: none !important;
 }
 
 .heroe .search ul.nav .dropdown .btn-group button:hover, .heroe .search ul.nav .dropdown .btn-group button:focus {
@@ -533,6 +535,10 @@ nav.navbar #navbar ul li a .login {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
+}
+
+.heroe .search ul.nav .dropdown .btn-group button:after {
+  right: -7px;
 }
 
 .heroe .search ul.nav li:first-child ::after {
@@ -594,6 +600,10 @@ nav.navbar #navbar ul li a .login {
 a {
   color: #000000 !important;
   padding: 3px 0;
+}
+
+body > section.heroe > div.search > form > ul > li > div > div {
+  min-width: 100%;
 }
 
 .popular-areas {
@@ -4152,6 +4162,8 @@ body > section.heroe > div.search > ul > li.active > div > div {
 
 .listings-hero .search form > ul > li .dropdown .btn-group button {
   font-size: 14px;
+  background-color: transparent !important;
+  border: none !important;
 }
 
 .listings-hero .search form > ul > li > div > a {
@@ -5900,7 +5912,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
     padding: 7px 0 !important;
   }
   .heroe {
-    height: 400px;
+    height: 320px;
     padding-top: 0px;
   }
   .heroe .search {
@@ -6663,6 +6675,7 @@ body > section.heroe > div.search > ul > li.active > div > select {
   }
   section.heroe > div.search {
     width: auto;
+    max-width: 740px;
   }
   section.surbubs h1 {
     -webkit-box-pack: justify;

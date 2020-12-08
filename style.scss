@@ -172,8 +172,9 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 		ul.nav{padding:8px 0 ;display: flex;align-items: center;width:100%;
 		    .dropdown{outline:none;border:none;background:transparent;
 				.btn-group{border:none;background-color:transparent;;
-					button{font-size:14px;background-color: transparent;
+					button{font-size:14px;background-color: transparent !important;padding-left:0;border:none !important;;
 						&:hover,&:focus{background-color:transparent;box-shadow:none;border:none;}
+						&:after{right:-7px;}
 						
 					}
 				}
@@ -203,7 +204,7 @@ nav.navbar{padding:15px 50px;min-height:3.75rem;background-color:white;-webkit-b
 }
 	
 
-
+body > section.heroe > div.search > form > ul > li > div > div{min-width:100%;}
 //heroe section ends
 
 //popular areas starts
@@ -1172,7 +1173,7 @@ body > section.heroe > div.search > ul > li.active > div > div{display: flex;ver
 			 >li{padding-right:14px;
 				.dropdown{
 					.btn-group{
-						button{font-size:14px;}
+						button{font-size:14px;background-color:transparent !important;border:none !important;}
 					}
 				}
 			  >div >a{font-size:14px;color: black;text-decoration: none;min-width:auto;
@@ -1847,7 +1848,7 @@ h1{font-size: 19px!important;}
 
 	}
 }
-.heroe{height:400px;padding-top:0px;
+.heroe{height:320px;padding-top:0px;
 
 	.search{width:100%;max-width:98%;background-color:transparent;padding:15px 15px;
 		h1{font-size: 18px;}
@@ -2160,7 +2161,7 @@ body > section.rentals > div > div > div.col-md-12.col-lg-4.col-sm-12.col-12.ord
 	align-items: center;
 }
 
-section.heroe > div.search{width: auto;}
+section.heroe > div.search{width: auto;max-width:740px;}
   section.surbubs{
 	  h1{justify-content: space-between;
 		&:before,&:after{width: 19%;}
