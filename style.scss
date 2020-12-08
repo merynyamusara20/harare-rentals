@@ -659,7 +659,6 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 				}
 		}
 	}	
-// .container-breadcrumb{padding:50px 0 0 0;}
 .card.agent{border:none;margin-top:0px;padding:0 15px;
 	img{height:140px;object-fit: cover;}
 	.agent-name{width:fit-content;
@@ -837,7 +836,6 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 		z-index: 2;
 	}
 
-	/* The container must be positioned relative: */
 .custom-select {border: none;padding:0;z-index:2;margin-right: 4px;width:auto;background-image:none;display: flex;align-items:baseline;padding-right:12px;
   position: relative;
   font-family: Arial;font-size: 14px;
@@ -846,7 +844,7 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 }
 
 .custom-select select {
-  display:none; /*hide original SELECT element: */
+  display:none;
   
 }
 
@@ -855,13 +853,11 @@ button.controls{background-color: #ff0000;border: none;outline:0;border: none;pa
 }
 
 
-/* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #000 transparent;
   top: 7px;font-size: 14px;
 }
 
-/* style the items (options), including the selected item: */
 .select-items{right:0;
 div,.select-selected {
   color: #212529;
@@ -888,7 +884,6 @@ div,.select-selected {
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);color: #212529;
 }
-// single--TANYA
 .facebook-link{
 	>img{width: 100%;}
 	>a{color: #246bbb;border: 1px solid #246bbb;padding: 6px 12px;width: 100%;display: flex;justify-content: center;height: 38px;margin: 10px 0;align-items: center;font-size: 18px;text-decoration: none;
@@ -1023,9 +1018,7 @@ div,.select-selected {
 			>div:nth-child(2){display: flex;flex-direction: column;width: 30%;
 			.small-img{margin:0 0 8px 8px ;width:100%;height: 120px;object-fit:cover}}
 			>div >a >span{background-color: rgb(0,74,30);text-decoration: none;text-decoration: none;}
-			>div:last-child{text-align: center;position: relative;
-				
-				//    >div{position: absolute;color:rgb(0,79,30);;top: 0;height: 100%;width: 100%;;display: flex;flex-direction: column;justify-content: center;align-items: center;
+			>div:last-child{text-align: center;position: relative;			
 					h5{font-size: 20px;margin-bottom: 8px;}
 					>div{display: flex;flex-direction: column;justify-content: space-evenly;align-items:baseline;justify-content:center;
 					>span{font-size: 10px;color: rgb(0,79,30);padding-bottom:10px;}}
@@ -1039,7 +1032,6 @@ div,.select-selected {
 		}
 		>div:last-child{position: relative;width: 600px;text-align: left;
 			>hr{margin-top: 0;margin-bottom: 10px;}
-			//    >div{position: absolute;color:rgb(0,79,30);;top: 0;height: 100%;width: 100%;;display: flex;flex-direction: column;justify-content: center;align-items: center;
 				h5{font-size: 20px;margin-bottom: 8px;}
 				.top{height:70px;}
 				>div{height: 37px;
@@ -1194,9 +1186,6 @@ body > section.heroe > div.search > ul > li.active > div > div{display: flex;ver
 
 }
 body > section.heroe > div.search > form > ul > li:nth-child(1) > div > div > button{background-color:transparent;color:#fff;}
-// .search.container > ul > li.active > div > select > option{
-// 	&:hover{background-color: #808080;}
-// }
 nav.single-page{background-color:white;}
 	
 	.tab-pane.active {
