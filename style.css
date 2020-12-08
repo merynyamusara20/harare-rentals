@@ -2764,7 +2764,6 @@ a.btn1 {
   z-index: 2;
 }
 
-/* The container must be positioned relative: */
 .custom-select {
   border: none;
   padding: 0;
@@ -2795,7 +2794,6 @@ a.btn1 {
 
 .custom-select select {
   display: none;
-  /*hide original SELECT element: */
 }
 
 .select-selected {
@@ -2805,14 +2803,12 @@ a.btn1 {
   background-image: none;
 }
 
-/* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #000 transparent;
   top: 7px;
   font-size: 14px;
 }
 
-/* style the items (options), including the selected item: */
 .select-items {
   right: 0;
 }
